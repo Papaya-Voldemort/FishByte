@@ -39,8 +39,15 @@ while True:
               "\n7. Play Tutorial")
     elif user_input == "fish":
         last_fish_time = 0
+        is_fishing = False
         #global space_pressed, last_space_time, bar_color
         while True:
+            if is_fishing:
+                # When fishing is in progress, use a non-blocking input with timeout
+                # This allows the progress bar to run without interruption
+                time.sleep(0.1)  # Small delay to prevent CPU overuse
+                continue
+
             action = input("Press enter to fish, or type 'exit' to return to the main menu: ").strip().lower()
 
             if action == "exit":
@@ -50,17 +57,18 @@ while True:
             if action == "":
                 current_time = time.time()
                 if current_time - last_fish_time < 1:
-                    print("Please wait a moment before fishing again...")
+                    #print("Please wait a moment before fishing again...")
                     time.sleep(max(0, 1 - (current_time - last_fish_time)))
                     continue
 
+                is_fishing = True
                 # Determine the fish before showing the loading bar
                 chosen_fish = helpers.fish(fish_data, fishing_rod)
                 fish_rarity = chosen_fish[1]
 
                 # Set loading time based on the rarity of the fish
                 loading_time_ranges = {
-                    "Bronze": (1, 5),
+                    "Bronze": (1, 4),
                     "Silver": (2, 7),
                     "Gold": (3, 9),
                     "Platinum": (6, 12),
@@ -76,8 +84,6 @@ while True:
 
                 print("Pulling in the fish...")
 
-                # Remove space bar detection and color logic
-
                 # Custom tqdm class (no color support needed now)
                 progress_bar = tqdm.tqdm(range(100), desc="Fishing", ncols=80, bar_format='{l_bar}{bar}| {n_fmt}/{total_fmt}')
                 for i in progress_bar:
@@ -92,7 +98,7 @@ while True:
                 current_xp = data.get("xp", 0)
                 helpers.edit_json(save_file, "xp", current_xp + 10)
                 last_fish_time = time.time()
-                #time.sleep(1)  # A small delay for readability
+                is_fishing = False  # Reset fishing status after completion
             else:
                 print("Invalid input. Please press Enter to fish or type 'exit' to stop.")
         continue  # Return to the main game loop after fishing
@@ -138,7 +144,7 @@ while True:
                         # Clear fish inventory
                         helpers.edit_json(save_file, "inventory.fish", [])
 
-                        print(f"You sold {sold_fish_count} black ment for a total of {total_value} coins!")
+                        print(f"You sold {sold_fish_count} fish for a total of {total_value} coins!")
                         continue
 
                     choice_num = int(choice)
@@ -149,7 +155,7 @@ while True:
                             fish_name = sold_fish[:sold_fish.index("(")].strip()
                             fish_rarity = sold_fish[sold_fish.index("(")+1:sold_fish.index(")")]
                         else:
-                            print("Invalid black men format, cannot sell.")
+                            print("Invalid fish format, cannot sell.")
                             continue
 
 
@@ -184,7 +190,7 @@ while True:
             else:
                 print("Your fish inventory is empty.")
         else:
-            print("No black men found in inventory.")
+            print("No fish found in inventory.")
     elif user_input == "view inventory":
         with open(save_file, "r") as file:
             data = json.load(file)
@@ -195,7 +201,7 @@ while True:
 
         # Display fishing rod
         fishing_rod = data.get("fishing_rod", "Basic")
-        print(f"Slave Whip: {fishing_rod}")
+        print(f"Fishing Rod: {fishing_rod}")
 
         # Display XP if it exists
         if "xp" in data:
@@ -224,5 +230,4 @@ while True:
                     else:
                         print(items)  # If it's not a list, just print the value
     elif user_input == "enter shop":
-        print("Welcome to the FishByte Shop!") 
-
+        print("Welcome to the FishByte Shop!")

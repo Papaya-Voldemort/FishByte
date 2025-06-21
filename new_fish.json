@@ -7,192 +7,192 @@
                 "Silver":         { "value": 30, "catch_rate": { "Basic": 200, "Advanced": 400, "Elite": 50 }},
                 "Gold":           { "value": 100, "catch_rate": { "Basic": 20, "Advanced": 150, "Elite": 300 }},
                 "Platinum":       { "value": 250, "catch_rate": { "Basic": 2, "Advanced": 50, "Elite": 100 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Diamond":        { "value": 750, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 25 }},
+                "Mythic":         { "value": 1250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 }},
+                "Void":           { "value": 1500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 4 }},
+                "Crystallized":      { "value": 1750, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 3 }},
+                "Ancient Fossil": { "value": 2500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.5 }}
             }
         },
         {
             "name": "Betta",
             "rarities": {
                 "Bronze":         { "value": 25, "catch_rate": { "Basic": 900, "Advanced": 300, "Elite": 0 }},
-                "Silver":         { "value": 75, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 75, "catch_rate": { "Basic": 150, "Advanced": 450, "Elite": 50 }},
+                "Gold":           { "value": 250, "catch_rate": { "Basic": 15, "Advanced": 100, "Elite": 400 }},
+                "Platinum":       { "value": 750, "catch_rate": { "Basic": 1, "Advanced": 25, "Elite": 75 }},
+                "Diamond":        { "value": 1500, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 25 }},
+                "Mythic":         { "value": 2000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 7 }},
+                "Void":           { "value": 2250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 }},
+                "Crystallized":      { "value": 2500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 3 }},
+                "Ancient Fossil": { "value": 5000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.1 }}
             }
         },
         {
             "name": "Guppy",
             "rarities": {
                 "Bronze":         { "value": 25, "catch_rate": { "Basic": 900, "Advanced": 300, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 75, "catch_rate": { "Basic": 150, "Advanced": 450, "Elite": 50 }},
+                "Gold":           { "value": 150, "catch_rate": { "Basic": 15, "Advanced": 100, "Elite": 400 }},
+                "Platinum":       { "value": 300, "catch_rate": { "Basic": 1, "Advanced": 25, "Elite": 75 }},
+                "Diamond":        { "value": 600, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 25 }},
+                "Mythic":         { "value": 1200, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 7 }},
+                "Void":           { "value": 2400, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 }},
+                "Crystallized":      { "value": 4800, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 3 }},
+                "Ancient Fossil": { "value": 9600, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.05 }}
             }
         },
         {
             "name": "Angelfish",
             "rarities": {
                 "Bronze":         { "value": 30, "catch_rate": { "Basic": 850, "Advanced": 150, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 75, "catch_rate": { "Basic": 100, "Advanced": 250, "Elite": 25 }},
+                "Gold":           { "value": 275, "catch_rate": { "Basic": 10, "Advanced": 75, "Elite": 200 }},
+                "Platinum":       { "value": 575, "catch_rate": { "Basic": 1, "Advanced": 25, "Elite": 50 }},
+                "Diamond":        { "value": 1250, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 20 }},
+                "Mythic":         { "value": 2200, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 10 }},
+                "Void":           { "value": 2350, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 8 }},
+                "Crystallized":      { "value": 2500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 }},
+                "Ancient Fossil": { "value": 4750, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.2 }}
             }
         },
         {
             "name": "Neon Tetra",
             "rarities": {
                 "Bronze":         { "value": 35, "catch_rate": { "Basic": 800, "Advanced": 100, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 150, "catch_rate": { "Basic": 250, "Advanced": 250, "Elite": 50 }},
+                "Gold":           { "value": 350, "catch_rate": { "Basic": 50, "Advanced": 75, "Elite": 250 }},
+                "Platinum":       { "value": 750, "catch_rate": { "Basic": 1, "Advanced": 25, "Elite": 50 }},
+                "Diamond":        { "value": 1250, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 20 }},
+                "Mythic":         { "value": 1500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 10 }},
+                "Void":           { "value": 2250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 8 }},
+                "Crystallized":      { "value": 2500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 }},
+                "Ancient Fossil": { "value": 3350, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.1 }}
             }
         },
         {
             "name": "Oscar",
             "rarities": {
                 "Bronze":         { "value": 25, "catch_rate": { "Basic": 850, "Advanced": 250, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 100, "catch_rate": { "Basic": 250, "Advanced": 500, "Elite": 25 }},
+                "Gold":           { "value": 250, "catch_rate": { "Basic": 50, "Advanced": 75, "Elite": 250 }},
+                "Platinum":       { "value": 650, "catch_rate": { "Basic": 1, "Advanced": 25, "Elite": 50 }},
+                "Diamond":        { "value": 1200, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 20 }},
+                "Mythic":         { "value": 1300, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 10 }},
+                "Void":           { "value": 1400, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 8 }},
+                "Crystallized":      { "value": 2500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 }},
+                "Ancient Fossil": { "value": 3550, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.1 }}
             }
         },
         {
             "name": "Swordtail",
             "rarities": {
                 "Bronze":         { "value": 35, "catch_rate": { "Basic": 800, "Advanced": 150, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 75, "catch_rate": { "Basic": 600, "Advanced": 250, "Elite": 50 }},
+                "Gold":           { "value": 350, "catch_rate": { "Basic": 50, "Advanced": 25, "Elite": 460 }},
+                "Platinum":       { "value": 750, "catch_rate": { "Basic": 1, "Advanced": 5, "Elite": 50 }},
+                "Diamond":        { "value": 1250, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 25 }},
+                "Mythic":         { "value": 1500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 15 }},
+                "Void":           { "value": 2000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 10 }},
+                "Crystallized":      { "value": 2250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 }},
+                "Ancient Fossil": { "value": 3500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.5 }}
             }
         },
         {
             "name": "Discus",
             "rarities": {
-                "Bronze":         { "value": 30, "catch_rate": { "Basic": 800, "Advanced": 250, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Bronze":         { "value": 40, "catch_rate": { "Basic": 750, "Advanced": 150, "Elite": 0 }},
+                "Silver":         { "value": 100, "catch_rate": { "Basic": 150, "Advanced": 300, "Elite": 50 }},
+                "Gold":           { "value": 300, "catch_rate": { "Basic": 20, "Advanced": 100, "Elite": 300 }},
+                "Platinum":       { "value": 650, "catch_rate": { "Basic": 2, "Advanced": 30, "Elite": 75 }},
+                "Diamond":        { "value": 1500, "catch_rate": { "Basic": 0, "Advanced": 2, "Elite": 25 }},
+                "Mythic":         { "value": 3000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 8 }},
+                "Void":           { "value": 6000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 6 }},
+                "Crystallized":   { "value": 12000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 4 }},
+                "Ancient Fossil": { "value": 25000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.1 }}
             }
         },
         {
             "name": "Clownfish",
             "rarities": {
                 "Bronze":         { "value": 25, "catch_rate": { "Basic": 850, "Advanced": 250, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 75, "catch_rate": { "Basic": 190, "Advanced": 300, "Elite": 50 }},
+                "Gold":           { "value": 180, "catch_rate": { "Basic": 25, "Advanced": 100, "Elite": 300 }},
+                "Platinum":       { "value": 250, "catch_rate": { "Basic": 2, "Advanced": 30, "Elite": 75 }},
+                "Diamond":        { "value": 750, "catch_rate": { "Basic": 0, "Advanced": 2, "Elite": 25 }},
+                "Mythic":         { "value": 1200, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 8 }},
+                "Void":           { "value": 1500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 2 }},
+                "Crystallized":      { "value": 2000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 1 }},
+                "Ancient Fossil": { "value": 4500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.1 }}
             }
         },
         {
             "name": "Koi",
             "rarities": {
                 "Bronze":         { "value": 75, "catch_rate": { "Basic": 750, "Advanced": 250, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 750, "catch_rate": { "Basic": 25, "Advanced": 250, "Elite": 50 }},
+                "Gold":           { "value": 1400, "catch_rate": { "Basic": 1, "Advanced": 50, "Elite": 150 }},
+                "Platinum":       { "value": 1800, "catch_rate": { "Basic": 0.1, "Advanced": 1, "Elite": 25 }},
+                "Diamond":        { "value": 2200, "catch_rate": { "Basic": 0, "Advanced": 0.1, "Elite": 15 }},
+                "Mythic":         { "value": 2250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 10 }},
+                "Void":           { "value": 3000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 1 }},
+                "Crystallized":      { "value": 2500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 }},
+                "Ancient Fossil": { "value": 7777, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.07777777 }}
             }
         },
         {
             "name": "Piranha",
             "rarities": {
                 "Bronze":         { "value": 10, "catch_rate": { "Basic": 800, "Advanced": 400, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 10, "catch_rate": { "Basic": 400, "Advanced": 200, "Elite": 50 }},
+                "Gold":           { "value": 10, "catch_rate": { "Basic": 200, "Advanced": 100, "Elite": 100 }},
+                "Platinum":       { "value": 10, "catch_rate": { "Basic": 1, "Advanced": 50, "Elite": 50 }},
+                "Diamond":        { "value": 10, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 25 }},
+                "Mythic":         { "value": 10, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 17.5 }},
+                "Void":           { "value": 10, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 8.75 }},
+                "Crystallized":      { "value": 10, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 4.375 }},
+                "Ancient Fossil": { "value": 10, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.1 }}
             }
         },
         {
             "name": "Catfish",
             "rarities": {
                 "Bronze":         { "value": 80, "catch_rate": { "Basic": 500, "Advanced": 400, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 240, "catch_rate": { "Basic": 400, "Advanced": 300, "Elite": 50 }},
+                "Gold":           { "value": 600, "catch_rate": { "Basic": 300, "Advanced": 200, "Elite": 100 }},
+                "Platinum":       { "value": 800, "catch_rate": { "Basic": 1, "Advanced": 100, "Elite": 50 }},
+                "Diamond":        { "value": 1100, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 40 }},
+                "Mythic":         { "value": 1800, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 25.5 }},
+                "Void":           { "value": 2500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 12.75 }},
+                "Crystallized":      { "value": 3500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 7 }},
+                "Ancient Fossil": { "value": 5350, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 1 }}
             }
         },
         {
             "name": "Carp",
             "rarities": {
-                "Bronze":         { "value": 75, "catch_rate": { "Basic": 750, "Advanced": 250, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Bronze":         { "value": 60, "catch_rate": { "Basic": 600, "Advanced": 200, "Elite": 0 }},
+                "Silver":         { "value": 180, "catch_rate": { "Basic": 150, "Advanced": 300, "Elite": 50 }},
+                "Gold":           { "value": 450, "catch_rate": { "Basic": 20, "Advanced": 150, "Elite": 200 }},
+                "Platinum":       { "value": 900, "catch_rate": { "Basic": 1, "Advanced": 50, "Elite": 100 }},
+                "Diamond":        { "value": 2000, "catch_rate": { "Basic": 0, "Advanced": 5, "Elite": 40 }},
+                "Mythic":         { "value": 4000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 10 }},
+                "Void":           { "value": 8000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 }},
+                "Crystallized":   { "value": 16000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.1 }},
+                "Ancient Fossil": { "value": 32000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.01 }}
             }
         },
         {
             "name": "\"Finn\" Fish (My dog)",
             "rarities": {
                 "Bronze":         { "value": 50, "catch_rate": { "Basic": 100, "Advanced": 50, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Silver":         { "value": 100, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Gold":           { "value": 150, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Platinum":       { "value": 250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Diamond":        { "value": 400, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Mythic":         { "value": 700, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Void":           { "value": 800, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },
@@ -206,7 +206,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },
@@ -220,7 +220,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },
@@ -234,7 +234,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },
@@ -248,7 +248,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },
@@ -262,7 +262,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },
@@ -276,7 +276,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },
@@ -290,7 +290,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },
@@ -304,7 +304,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },
@@ -318,7 +318,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -331,7 +331,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -344,7 +344,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -357,7 +357,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -370,7 +370,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -383,7 +383,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -396,7 +396,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -409,7 +409,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -422,7 +422,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -435,7 +435,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -448,7 +448,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -461,7 +461,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -474,7 +474,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -487,7 +487,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -500,7 +500,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -513,7 +513,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -526,7 +526,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -539,7 +539,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -552,7 +552,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -565,7 +565,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -578,7 +578,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -591,7 +591,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -604,7 +604,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -617,7 +617,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -630,7 +630,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -643,7 +643,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -656,7 +656,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -669,7 +669,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -682,7 +682,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -695,7 +695,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -708,7 +708,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -721,7 +721,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -734,7 +734,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -747,7 +747,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -760,7 +760,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -773,7 +773,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -786,7 +786,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -799,7 +799,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -812,7 +812,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -825,7 +825,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -838,7 +838,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -851,7 +851,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -864,7 +864,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -877,7 +877,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -890,7 +890,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -903,7 +903,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -916,7 +916,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -929,7 +929,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -942,7 +942,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -955,7 +955,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -968,7 +968,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -981,7 +981,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -994,7 +994,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1007,7 +1007,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1020,7 +1020,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1033,7 +1033,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1046,7 +1046,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1059,7 +1059,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1072,7 +1072,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1085,7 +1085,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1098,7 +1098,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1111,7 +1111,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1124,7 +1124,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1137,7 +1137,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1150,7 +1150,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1163,7 +1163,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1176,7 +1176,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1189,7 +1189,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1202,7 +1202,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1215,7 +1215,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1228,7 +1228,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1241,7 +1241,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1254,7 +1254,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1267,7 +1267,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1280,7 +1280,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1293,7 +1293,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1306,7 +1306,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1319,7 +1319,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1332,7 +1332,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1345,7 +1345,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1358,7 +1358,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1371,7 +1371,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1384,7 +1384,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1397,7 +1397,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1410,7 +1410,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1423,7 +1423,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1436,7 +1436,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1449,7 +1449,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1462,7 +1462,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1475,7 +1475,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1488,7 +1488,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1501,7 +1501,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1514,7 +1514,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1527,7 +1527,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1540,7 +1540,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1553,7 +1553,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1566,7 +1566,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1579,7 +1579,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1592,7 +1592,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1605,7 +1605,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1618,7 +1618,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1631,7 +1631,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1644,7 +1644,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1657,7 +1657,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1670,7 +1670,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1683,7 +1683,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1696,7 +1696,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1709,7 +1709,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1722,7 +1722,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1735,7 +1735,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1748,7 +1748,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1761,7 +1761,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1774,7 +1774,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1787,7 +1787,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1800,7 +1800,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1813,7 +1813,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1826,7 +1826,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1839,7 +1839,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1852,7 +1852,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1865,7 +1865,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1878,7 +1878,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1891,7 +1891,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1904,7 +1904,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1917,7 +1917,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1930,7 +1930,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1943,7 +1943,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1956,7 +1956,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1969,7 +1969,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1982,7 +1982,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -1995,7 +1995,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -2008,7 +2008,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },        {
@@ -2021,7 +2021,7 @@
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Celestial":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         }

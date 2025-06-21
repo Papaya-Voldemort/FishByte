@@ -1,11 +1,10 @@
 {
-    "coins": 0,
+    "coins": 7482,
     "fishing_rod": "Basic",
-    "xp": 20,
+    "xp": 450,
     "inventory": {
         "fish": [
-            "Grouper (Bronze)",
-            "Swordtail (Bronze)"
+            "Koi (Bronze)"
         ]
     },
     "stats": {
