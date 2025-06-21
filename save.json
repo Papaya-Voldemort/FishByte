@@ -1,10 +1,10 @@
 {
-    "coins": 7482,
-    "fishing_rod": "Basic",
-    "xp": 450,
+    "coins": 7602000,
+    "fishing_rod": "Elite",
+    "xp": 490,
     "inventory": {
         "fish": [
-            "Koi (Bronze)"
+            "Trout (Gold)"
         ]
     },
     "stats": {

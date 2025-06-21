@@ -24,7 +24,12 @@ else:
     print("Loading save file...")
     print("Welcome back to FishByte!")
 
-fishing_rod = "Basic"  # Or "Advanced", "Elite"
+# Load the save data
+with open(save_file, "r") as file:
+    data = json.load(file)
+
+# Check if 'fishing_rod' exists in the save data, otherwise default to "Basic"
+fishing_rod = data.get("fishing_rod", "Basic")
 
 while True:
     user_input = input("What would you like to do? (type 'help' for options): ").strip().lower()
@@ -37,7 +42,7 @@ while True:
               "\n5. Save Game "
               "\n6. Exit "
               "\n7. Play Tutorial")
-    elif user_input == "fish":
+    elif user_input == "fish" or user_input == "1":
         last_fish_time = 0
         is_fishing = False
         #global space_pressed, last_space_time, bar_color
@@ -102,7 +107,7 @@ while True:
             else:
                 print("Invalid input. Please press Enter to fish or type 'exit' to stop.")
         continue  # Return to the main game loop after fishing
-    elif user_input == "sell fish":
+    elif user_input == "sell fish" or user_input == "2" or user_input == "sell":
         with open(save_file, "r") as file:
             data = json.load(file)
         if "inventory" in data and "fish" in data["inventory"]:
@@ -191,7 +196,7 @@ while True:
                 print("Your fish inventory is empty.")
         else:
             print("No fish found in inventory.")
-    elif user_input == "view inventory":
+    elif user_input == "view inventory" or user_input == "3" or user_input == "inventory":
         with open(save_file, "r") as file:
             data = json.load(file)
 
@@ -229,5 +234,45 @@ while True:
                             print(f"{i}. {item}")
                     else:
                         print(items)  # If it's not a list, just print the value
-    elif user_input == "enter shop":
+    elif user_input == "enter shop" or user_input == "4" or user_input == "shop":
         print("Welcome to the FishByte Shop!")
+        print("Available items for purchase:")
+
+        # Define shop items with their names, costs, and rod types
+        shop_items = {
+            "1": {"name": "Basic Fishing Rod", "cost": 10000, "rod": "Basic"},
+            "2": {"name": "Advanced Fishing Rod", "cost": 50000, "rod": "Advanced"},
+            "3": {"name": "Elite Fishing Rod", "cost": 100000, "rod": "Elite"},
+            "4": {"name": "Exit Shop"}
+        }
+
+        # Display shop items
+        for key, item in shop_items.items():
+            if key != "4":
+                print(f"{key}. {item['name']} - {item['cost']} coins")
+            else:
+                print(f"{key}. {item['name']}")
+
+        query = input("Enter the number of the item you want to purchase: ")
+
+        if query in shop_items:
+            selected_item = shop_items[query]
+
+            if query == "4":
+                print("Exiting shop...")
+            else:
+                item_name = selected_item['name']
+                item_cost = selected_item['cost']
+                item_rod = selected_item['rod']
+
+                # Check if the player has enough coins
+                if data.get("coins", 0) >= item_cost:
+                    # Deduct coins and update fishing rod
+                    helpers.edit_json(save_file, "coins", data.get("coins", 0) - item_cost)
+                    helpers.edit_json(save_file, "fishing_rod", item_rod)
+                    fishing_rod = item_rod  # Update the local variable
+                    print(f"You have purchased the {item_name}!")
+                else:
+                    print("You do not have enough coins to purchase this item.")
+        else:
+            print("Invalid option. Please try again.")
