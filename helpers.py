@@ -1,13 +1,8 @@
 import random
 import json
+import time
 import simpleaudio as sa
 import threading
-import time
-from pydub import AudioSegment
-import os
-import simpleaudio as sa
-import threading
-import time
 from pydub import AudioSegment
 import os
 

@@ -1,14 +1,19 @@
+import warnings
+warnings.filterwarnings("ignore", category=RuntimeWarning)
+
 import random
 import os
 import json
 import helpers
 import time
 import tqdm
-import simpleaudio as sa
+import tutorial
+
+
 
 # Global variables for fishing loading bar
 
-
+# Make sound volume adjustable
 background_music_file = "song.wav"  # or "background_music.wav"
 helpers.play_background_music(background_music_file)
 
@@ -45,7 +50,9 @@ while True:
               "\n4. Enter Shop "
               "\n5. Save Game "
               "\n6. Exit "
-              "\n7. Play Tutorial")
+              "\n7. Play Tutorial"
+              "\n8. Reset Game"
+              "\n\nYou can also type the number corresponding to the action (e.g., '1' for Fish).")
     elif user_input == "fish" or user_input == "1":
         last_fish_time = 0
         is_fishing = False
@@ -280,3 +287,46 @@ while True:
                     print("You do not have enough coins to purchase this item.")
         else:
             print("Invalid option. Please try again.")
+
+    elif user_input == "save game" or user_input == "5" or user_input == "save":
+        print("Saving game...")
+        with open(save_file, "w") as file:
+            json.dump(data, file, indent=4)
+    elif user_input == "exit" or user_input == "6" or user_input == "quit" or user_input == "exit game":
+        print("Exiting game. Goodbye!")
+        break
+        exit()
+    elif user_input == "play tutorial" or user_input == "7" or user_input == "tutorial":
+        print("Playing tutorial...")
+        tutorial.play_tutorial()
+    elif user_input == "reset game" or user_input == "8" or user_input == "reset":
+        print("Resetting game...")
+        if os.path.exists(save_file):
+            os.remove(save_file)
+        default_data = {
+            "coins": 0,
+            "fishing_rod": "Basic",
+            "xp": 0,
+            "inventory": {
+                "fish": []
+            },
+            "stats": {
+                "total_fish_caught": 0,
+                "most_valuable_fish": {
+                    "name": None,
+                    "value": 0
+                }
+            },
+            "settings": {
+                "music_volume": 1.0,
+                "effects_volume": 1.0
+            }
+        }
+        with open(save_file, "w") as f:
+            json.dump(default_data, f, indent=4)
+        print("Game reset. Welcome to FishByte!")
+        data = default_data
+    else:
+        print("Invalid command. Type 'help' for options.")
+
+

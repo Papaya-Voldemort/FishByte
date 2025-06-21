@@ -1,10 +1,9 @@
 {
-    "coins": 7602000,
+    "coins": 0,
     "fishing_rod": "Basic",
-    "xp": 490,
+    "xp": 0,
     "inventory": {
-        "fish": [
-        ]
+        "fish": []
     },
     "stats": {
         "total_fish_caught": 0,
