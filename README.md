@@ -39,7 +39,7 @@ My ultimate goal for FishByte is to develop it into a full-fledged game with a g
 
 ## How to Play
 
-To play FishByte, you'll need to have Python installed on your computer. Then, simply run the following command in your terminal:
+To play FishByte, you'll need to have Python installed on your computer. Then, simply run the following command in your terminal once you've cloned the repository:
 
 ```
 python main.py
