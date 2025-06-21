@@ -1,5 +1,15 @@
 import random
 import json
+import simpleaudio as sa
+import threading
+import time
+from pydub import AudioSegment
+import os
+import simpleaudio as sa
+import threading
+import time
+from pydub import AudioSegment
+import os
 
 def fish(fish_data, fishing_rod):
     weighted_choices = []
@@ -55,3 +65,49 @@ def edit_json(file_path, key, value):
 
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=4)  # Write the updated data back to the file with indentation for readability
+
+
+def play_background_music(filename):
+    """Plays background music in a loop, supports .mp3 and .wav natively."""
+    try:
+        if filename.lower().endswith(".mp3"):
+            # Load mp3 and convert to WaveObject directly
+            sound = AudioSegment.from_mp3(filename)
+            # Convert to raw data
+            raw_data = sound.raw_data
+            # Get frame rate, sample width, and channels
+            frame_rate = sound.frame_rate
+            sample_width = sound.sample_width
+            channels = sound.channels
+            # Load raw data into WaveObject
+            wave_obj = sa.WaveObject(
+                raw_data,
+                num_channels=channels,
+                bytes_per_sample=sample_width,
+                sample_rate=frame_rate
+            )
+        elif filename.lower().endswith(".wav"):
+            # Load wav file
+            wave_obj = sa.WaveObject.from_wave_file(filename)
+        else:
+            print(f"Error: Unsupported file format. Only .mp3 and .wav are supported.")
+            return
+    except FileNotFoundError:
+        print(f"Error: '{filename}' not found. Music will not play.")
+        return
+    except Exception as e:
+        print(f"Error loading '{filename}': {e}")
+        return
+
+    def loop_music():
+        while True:
+            try:
+                play_obj = wave_obj.play()
+                play_obj.wait_done()
+            except Exception as e:
+                print(f"Error playing music: {e}")
+                break
+
+    # Create and start the music thread
+    music_thread = threading.Thread(target=loop_music, daemon=True)
+    music_thread.start()

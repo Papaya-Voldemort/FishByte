@@ -4,9 +4,13 @@ import json
 import helpers
 import time
 import tqdm
+import simpleaudio as sa
 
 # Global variables for fishing loading bar
 
+
+background_music_file = "song.wav"  # or "background_music.wav"
+helpers.play_background_music(background_music_file)
 
 save_file = "save.json"
 
