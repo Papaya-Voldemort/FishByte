@@ -6,8 +6,13 @@ FishByte is a text-based fishing game written in Python. It's a passion project 
 
 ## What's New (June 21, 2025)
 
+*   **Tutorial:** A new tutorial has been added to help new players learn the basics of the game.
 *   **The Shop is Open!** You can now spend your hard-earned coins on new fishing rods.
 *   **New Fish!** A variety of new fish have been added to the game.
+
+## Devlog (June 21, 2025)
+
+I've been working on making the game more accessible for new players. To that end, I've added a comprehensive tutorial that walks players through the basic mechanics of the game. This should make it easier for newcomers to get started and understand the core gameplay loop. I'm hoping this will improve the overall player experience and encourage more people to stick with the game. I've also been squashing some bugs and tweaking the balancing of the fish rarities.
 
 ## Gameplay
 
