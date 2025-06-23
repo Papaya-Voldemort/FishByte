@@ -242,42 +242,42 @@
             "name": "Bass",
             "rarities": {
                 "Bronze":         { "value": 45, "catch_rate": { "Basic": 550, "Advanced": 250, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 175, "catch_rate": { "Basic": 150, "Advanced": 400, "Elite": 50 }},
+                "Gold":           { "value": 250, "catch_rate": { "Basic": 35, "Advanced": 75, "Elite": 300 }},
+                "Platinum":       { "value": 750, "catch_rate": { "Basic": 1, "Advanced": 25, "Elite": 100 }},
+                "Diamond":        { "value": 1200, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 30 }},
+                "Mythic":         { "value": 1250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 20 }},
+                "Void":           { "value": 1500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 10 }},
+                "Crystallized":      { "value": 1750, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 }},
+                "Ancient Fossil": { "value": 2250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 1 }}
             }
         },
         {
             "name": "Perch",
             "rarities": {
                 "Bronze":         { "value": 35, "catch_rate": { "Basic": 800, "Advanced": 300, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Silver":         { "value": 175, "catch_rate": { "Basic": 200, "Advanced": 450, "Elite": 50 }},
+                "Gold":           { "value": 375, "catch_rate": { "Basic": 50, "Advanced": 75, "Elite": 300 }},
+                "Platinum":       { "value": 750, "catch_rate": { "Basic": 1, "Advanced": 25, "Elite": 100 }},
+                "Diamond":        { "value": 1500, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 30 }},
+                "Mythic":         { "value": 2250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 20 }},
+                "Void":           { "value": 2500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 10 }},
+                "Crystallized":      { "value": 2750, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 2.5 }},
+                "Ancient Fossil": { "value": 3250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.5 }}
             }
         },
         {
             "name": "Pike",
             "rarities": {
-                "Bronze":         { "value": 77, "catch_rate": { "Basic": 750, "Advanced": 250, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Mythic":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Void":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Crystallized":      { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
-                "Ancient Fossil": { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
+                "Bronze":         { "value": 75, "catch_rate": { "Basic": 750, "Advanced": 250, "Elite": 0 }},
+                "Silver":         { "value": 150, "catch_rate": { "Basic": 175, "Advanced": 400, "Elite": 0 }},
+                "Gold":           { "value": 325, "catch_rate": { "Basic": 50, "Advanced": 65, "Elite": 0 }},
+                "Platinum":       { "value": 650, "catch_rate": { "Basic": 1, "Advanced": 20, "Elite": 0 }},
+                "Diamond":        { "value": 1050, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 0 }},
+                "Mythic":         { "value": 1250, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Void":           { "value": 1350, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Crystallized":      { "value": 1500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Ancient Fossil": { "value": 1750, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }}
             }
         },
         {

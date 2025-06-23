@@ -11,9 +11,9 @@ import tutorial
 
 
 
-# Global variables for fishing loading bar
 
-# Make sound volume adjustable
+
+# TODO Make sound volume adjustable
 background_music_file = "song.wav"  # or "background_music.wav"
 helpers.play_background_music(background_music_file)
 
@@ -195,7 +195,7 @@ while True:
                         coins = data.get("coins", 0)
                         coins += fish_value
 
-                        # Save updated coins to file
+                        # Save updated coins to save file
                         helpers.edit_json(save_file, "coins", coins)
 
                         print(f"You sold {sold_fish} for {fish_value} coins!")
@@ -231,7 +231,7 @@ while True:
                 for i, fish in enumerate(fish_inventory, start=1):
                     print(f"{i}. {fish}")
             else:
-                print("\nYour fish inventory is empty.")
+                print("\nYour fish inventory is empty, catch some fish!")
         else:
             print("\nNo fish found in inventory.")
 
@@ -244,7 +244,7 @@ while True:
                         for i, item in enumerate(items, start=1):
                             print(f"{i}. {item}")
                     else:
-                        print(items)  # If it's not a list, just print the value
+                        print(items)  # If it's not a list, just print the values of the fish inventory
     elif user_input == "enter shop" or user_input == "4" or user_input == "shop":
         print("Welcome to the FishByte Shop!")
         print("Available items for purchase:")
