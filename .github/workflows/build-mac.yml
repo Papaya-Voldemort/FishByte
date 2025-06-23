@@ -13,6 +13,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: List files in workspace
+      run: ls -R
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -26,3 +29,10 @@ jobs:
 
     - name: Build the application
       run: python setup-mac.py py2app
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: FishByte-macOS
+        path: dist/main.app
+
