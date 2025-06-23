@@ -71,6 +71,7 @@ while True:
                 break  # Exit the fishing loop
 
             if action == "":
+                print("Fishing...\n")
                 current_time = time.time()
                 if current_time - last_fish_time < 1:
                     #print("Please wait a moment before fishing again...")

@@ -1,7 +1,7 @@
 {
     "coins": 0,
     "fishing_rod": "Basic",
-    "xp": 330,
+    "xp": 360,
     "inventory": {
         "fish": [
             "Sardine (Bronze)",
@@ -36,7 +36,10 @@
             "Arowana (Bronze)",
             "Trout (Bronze)",
             "Clownfish (Bronze)",
-            "Sardine (Bronze)"
+            "Sardine (Bronze)",
+            "Piranha (Bronze)",
+            "Discus (Silver)",
+            "Clownfish (Bronze)"
         ]
     },
     "stats": {
