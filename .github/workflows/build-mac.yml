@@ -30,8 +30,17 @@ jobs:
     - name: Build the application
       run: python setup-mac.py py2app
 
+    - name: List build output
+      run: ls -R dist
+
+    - name: Create zip archive of the app
+      run: |
+        cd dist
+        zip -r ../FishByte-macOS.zip main.app
+        cd ..
+
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: FishByte-macOS
-        path: dist/main.app
+        path: FishByte-macOS.zip
