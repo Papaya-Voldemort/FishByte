@@ -13,8 +13,8 @@ import tutorial
 
 
 
-# TODO Make sound volume adjustable
-background_music_file = "song.wav"  # or "background_music.wav"
+# TODO Make sound volume adjustable from the save settings
+background_music_file = "song.wav"
 helpers.play_background_music(background_music_file)
 
 save_file = "save.json"
