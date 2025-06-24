@@ -66,6 +66,10 @@ To play FishByte, you'll need to have Python and Git installed on your computer.
     ```bash
     pip install -r requirements.txt
     ```
+    > **Note for macOS users:** If the above command doesn't work, you may need to use `pip3` instead:
+    > ```bash
+    > pip3 install -r requirements.txt
+    > ```
 
 4.  **Run the Game**
     
@@ -73,3 +77,7 @@ To play FishByte, you'll need to have Python and Git installed on your computer.
     ```bash
     python main.py
     ```
+    > **Note for macOS users:** You may need to use `python3` instead:
+    > ```bash
+    > python3 main.py
+    > ```
