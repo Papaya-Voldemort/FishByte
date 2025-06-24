@@ -6,6 +6,7 @@ from pydub import AudioSegment
 import sys
 import colorama
 from colorama import Fore, Style
+import time
 
 # Platform-specific imports for input handling
 if sys.platform == "win32":
@@ -140,10 +141,12 @@ def play_background_music(filename, volume_change_db=0):
         return
 
     def loop_music():
+        play_obj = None
         while True:
             try:
-                play_obj = wave_obj.play()
-                play_obj.wait_done()
+                if play_obj is None or not play_obj.is_playing():
+                    play_obj = wave_obj.play()
+                time.sleep(0.1)
             except Exception as e:
                 print(f"Error playing music: {e}")
                 break
@@ -151,6 +154,7 @@ def play_background_music(filename, volume_change_db=0):
     # Create and start the music thread
     music_thread = threading.Thread(target=loop_music, daemon=True)
     music_thread.start()
+
 
 def flush_input():
     """Flushes the input buffer."""

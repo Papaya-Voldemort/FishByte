@@ -10,7 +10,7 @@ def play_tutorial():
     An interactive tutorial for the FishByte game.
     """
     save_file = "tutorial_save.json"
-    fish_data_file = "new_fish.json"
+    fish_data_file = "fish/new_fish.json"
 
     # --- Setup a clean environment for the tutorial ---
     if os.path.exists(save_file):
@@ -45,11 +45,11 @@ def play_tutorial():
 
     # --- Fishing ---
     print(helpers.color_text("\nLet's start with the most important command: 'fish'.", "green"))
-    print(helpers.color_text("Type 'fish' in the main menu to cast your line.", "green"))
-    print(helpers.color_text("When you're fishing, you'll need to be quick! A message will appear on screen telling you to press ENTER.", "green"))
-    print(helpers.color_text("The faster you press ENTER, the better your chances of catching a fish.", "green"))
-    print(helpers.color_text("Let's try it now!", "bold"))
-    input("Press Enter to cast your line...")
+    print(helpers.color_text("Type 'fish' in the main menu to see the fishing locations.", "green"))
+    print(helpers.color_text("The 'Home Pond' is always available, but you'll need to buy tickets to fish in other locations.", "green"))
+    print(helpers.color_text("Let's try fishing in the Home Pond now!", "bold"))
+    input("Press Enter to continue...")
+
 
     print(helpers.color_text("Pulling in the fish...", "yellow"))
     time.sleep(random.uniform(0.5, 2.0))
@@ -157,6 +157,7 @@ def play_tutorial():
     # --- Shop ---
     print("\nWhat do you do with all those coins? Buy better gear, of course!")
     print("Use the 'enter shop' command to see what's for sale.")
+    print("You can buy better fishing rods and tickets to new fishing locations.")
     print("A better fishing rod will help you catch rarer and more valuable fish.")
     print("Let's visit the shop. We've given you some extra coins for this tutorial.")
     input("Press Enter to enter the shop...")
@@ -172,24 +173,34 @@ def play_tutorial():
         "2": {"name": "Advanced Fishing Rod", "cost": 50000, "rod": "Advanced"},
         "3": {"name": "Elite Fishing Rod", "cost": 100000, "rod": "Elite"},
     }
+    ticket_prices = {
+        "river": 50,
+        "lake": 100,
+        "shallow_ocean": 200,
+        "deep_ocean": 500
+    }
     print("\n--- TUTORIAL SHOP ---")
+    print("--- Fishing Rods ---")
     for key, item in shop_items.items():
         print(f"{key}. {item['name']} - {item['cost']} coins")
-    print("---------------------")
+    print("--- Tickets ---")
+    print(f"4. River Ticket - {ticket_prices['river']} coins")
+    print(f"5. Lake Ticket - {ticket_prices['lake']} coins")
+    print("--------------------")
 
-    print("\nLet's buy the 'Basic Fishing Rod'.")
+
+    print("\nLet's buy the 'River Ticket'.")
     input("Press Enter to purchase...")
 
-    item_cost = shop_items["1"]["cost"]
-    item_rod = shop_items["1"]["rod"]
+    item_cost = ticket_prices["river"]
 
     helpers.edit_json(save_file, "coins", data.get("coins", 0) - item_cost)
-    helpers.edit_json(save_file, "fishing_rod", item_rod)
+    helpers.edit_json(save_file, "tickets.river", True)
 
-    print("You have purchased the Basic Fishing Rod!")
+    print("You have purchased the River Ticket!")
     with open(save_file, "r") as file:
         data = json.load(file)
-    print(f"You now have {data.get('coins', 0)} coins and a {data.get('fishing_rod')} rod.")
+    print(f"You now have {data.get('coins', 0)} coins and can fish in the river.")
     input("Press Enter to continue...")
 
     # --- Saving ---

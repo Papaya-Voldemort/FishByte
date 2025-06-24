@@ -1,9 +1,13 @@
 {
-    "coins": 0,
+    "coins": 4950,
     "fishing_rod": "Basic",
-    "xp": 0,
+    "xp": 30,
     "inventory": {
-        "fish": []
+        "fish": [
+            "Angelfish (Bronze)",
+            "Perch (Bronze)",
+            "Neon Tetra (Silver)"
+        ]
     },
     "stats": {
         "total_fish_caught": 0,
@@ -16,5 +20,18 @@
         "music_volume": -15.0,
         "effects_volume": 1.0
     },
-    "gallery": {}
+    "gallery": {
+        "Angelfish": {
+            "Bronze": true
+        },
+        "Perch": {
+            "Bronze": true
+        },
+        "Neon Tetra": {
+            "Silver": true
+        }
+    },
+    "tickets": {
+        "river": true
+    }
 }

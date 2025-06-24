@@ -42,6 +42,10 @@ While the fish database is 100% human-made, I have used AI for code assistance i
 
 My ultimate goal for FishByte is to develop it into a full-fledged game with a graphical user interface (GUI). This text-based version is the first step in that journey, and I'm excited to continue building on it.
 
+## What's Next (June 24, 2025)
+
+With the core mechanics of the game in place, my next focus will be on populating the world with more content. I'll be filling out the `river.json`, `lake.json`, `shallow_ocean.json`, and `deep_ocean.json` files with unique fish for each location. Get ready for a whole new world of fishing!
+
 ## How to Play
 
 To play FishByte, you'll need to have Python and Git installed on your computer. Follow these steps to get started:
