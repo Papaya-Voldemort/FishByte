@@ -2,7 +2,6 @@ import time
 import json
 import os
 import random
-import tqdm
 import helpers
 
 
