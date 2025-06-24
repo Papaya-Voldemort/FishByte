@@ -1,13 +1,32 @@
 import random
 import json
-import time
 import simpleaudio as sa
 import threading
 from pydub import AudioSegment
-import os
 import sys
 import termios
 import select
+import colorama
+from colorama import Fore, Style
+
+colorama.init(autoreset=True)
+
+def color_text(text, color):
+    colors = {
+        "red": Fore.RED,
+        "green": Fore.GREEN,
+        "yellow": Fore.YELLOW,
+        "blue": Fore.BLUE,
+        "magenta": Fore.MAGENTA,
+        "cyan": Fore.CYAN,
+        "white": Fore.WHITE,
+        "purple": Fore.MAGENTA,
+        "orange": Fore.YELLOW,
+        "bold": Style.BRIGHT,
+        "reset": Style.RESET_ALL
+    }
+    return f"{colors.get(color, Style.RESET_ALL)}{text}{Style.RESET_ALL}"
+
 
 def fish(fish_data, fishing_rod):
     weighted_choices = []

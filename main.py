@@ -6,8 +6,11 @@ import os
 import json
 import helpers
 import time
-import tqdm
 import tutorial
+import colorama
+from colorama import Fore, Style
+
+
 
 
 
@@ -26,12 +29,12 @@ with open("new_fish.json", "r") as file:
 if not os.path.exists(save_file):
     with open(save_file, "w") as f:
         f.write("{}")
-    print("Created save file...")
-    print("Welcome to FishByte!")
+    print(helpers.color_text("Created save file...", "green"))
+    print(helpers.color_text("Welcome to FishByte!", "cyan"))
 else:
-    print("Save file found...")
-    print("Loading save file...")
-    print("Welcome back to FishByte!")
+    print(helpers.color_text("Save file found...", "green"))
+    print(helpers.color_text("Loading save file...", "green"))
+    print(helpers.color_text("Welcome back to FishByte!", "cyan"))
 
 # Load the save data
 with open(save_file, "r") as file:
@@ -43,20 +46,20 @@ fishing_rod = data.get("fishing_rod", "Basic")
 last_fish_time = 0
 
 while True:
-    user_input = input("What would you like to do? (type 'help' for options): ").strip().lower()
+    user_input = input(helpers.color_text("What would you like to do? (type 'help' for options): ", "yellow")).strip().lower()
     if user_input == "help":
-        print("Options: "
-              "\n1. Fish "
-              "\n2. Sell Fish "
-              "\n3. View Inventory "
-              "\n4. Enter Shop "
-              "\n5. Save Game "
-              "\n6. Exit "
-              "\n7. Play Tutorial"
-              "\n8. Reset Game"
-              "\n9. Gallery"
-              "\n10. Stats"
-              "\n\nYou can also type the number corresponding to the action (e.g., '1' for Fish).")
+        print(helpers.color_text("Options: ", "bold"))
+        print(helpers.color_text("1. Fish", "cyan"))
+        print(helpers.color_text("2. Sell Fish", "cyan"))
+        print(helpers.color_text("3. View Inventory", "cyan"))
+        print(helpers.color_text("4. Enter Shop", "cyan"))
+        print(helpers.color_text("5. Save Game", "cyan"))
+        print(helpers.color_text("6. Exit", "cyan"))
+        print(helpers.color_text("7. Play Tutorial", "cyan"))
+        print(helpers.color_text("8. Reset Game", "cyan"))
+        print(helpers.color_text("9. Gallery", "cyan"))
+        print(helpers.color_text("10. Stats", "cyan"))
+        print(helpers.color_text("\nYou can also type the number corresponding to the action (e.g., '1' for Fish).", "yellow"))
     elif user_input == "fish" or user_input == "1":
         is_fishing = False
         #global space_pressed, last_space_time, bar_color
@@ -67,10 +70,10 @@ while True:
                 time.sleep(0.1)  # Small delay to prevent CPU overuse
                 continue
 
-            action = input("Press enter to fish, or type 'exit' to return to the main menu: ").strip().lower()
+            action = input(helpers.color_text("Press enter to fish, or type 'exit' to return to the main menu: ", "cyan")).strip().lower()
 
             if action == "exit":
-                print("You stopped fishing.")
+                print(helpers.color_text("You stopped fishing.", "yellow"))
                 break  # Exit the fishing loop
 
             if action == "":
@@ -86,19 +89,19 @@ while True:
                 fish_rarity = chosen_fish[1]
 
                 # --- NEW FISHING MINI-GAME ---
-                print("Pulling in the fish...")
+                print(helpers.color_text("Pulling in the fish...", "yellow"))
                 time.sleep(random.uniform(0.5, 2.0))  # Wait for a random time before showing the prompt
 
                 # Check for premature input (spamming)
                 if helpers.is_input_waiting():
-                    print("You scared the fish away by making too much noise!")
+                    print(helpers.color_text("You scared the fish away by making too much noise!", "red"))
                     helpers.flush_input() # Clear the spam
                     is_fishing = False
                     last_fish_time = time.time()
                     continue
 
                 helpers.flush_input()  # Clear the input buffer
-                print("!!! PRESS ENTER NOW !!!")
+                print(helpers.color_text("!!! PRESS ENTER NOW !!!", "red"))
                 start_time = time.time()
                 input()
                 end_time = time.time()
@@ -119,16 +122,16 @@ while True:
                 }.get(fish_rarity, 2.0)
 
                 if reaction_time > max_reaction_time:
-                    print(f"Too slow! Your reaction time of {reaction_time:.2f}s wasn't fast enough. The fish got away.")
+                    print(helpers.color_text(f"Too slow! Your reaction time of {reaction_time:.2f}s wasn't fast enough. The fish got away.", "red"))
                     is_fishing = False
                     last_fish_time = time.time()
                     continue
 
-                print(f"Nice! You reacted in {reaction_time:.2f}s.")
+                print(helpers.color_text(f"Nice! You reacted in {reaction_time:.2f}s.", "green"))
                 # --- END OF MINI-GAME ---
 
-                print("Fish caught!")
-                print(f"Chosen fish: {chosen_fish[0]}, Rarity: {chosen_fish[1]}, Stats: {chosen_fish[2]}")
+                print(helpers.color_text("Fish caught!", "green"))
+                print(f"Chosen fish: {helpers.color_text(chosen_fish[0], 'blue')}, Rarity: {helpers.color_text(chosen_fish[1], 'purple')}, Stats: {chosen_fish[2]}")
                 helpers.edit_json(save_file, "inventory.fish", chosen_fish[0] + " (" + chosen_fish[1] + ")")
                 import json
 
@@ -157,7 +160,7 @@ while True:
                 is_fishing = False  # Reset fishing status after completion
                 continue
             else:
-                print("Invalid input. Please press Enter to fish or type 'exit' to stop.")
+                print(helpers.color_text("Invalid input. Please press Enter to fish or type 'exit' to stop.", "red"))
         continue  # Return to the main game loop after fishing
     elif user_input == "sell fish" or user_input == "2" or user_input == "sell":
         with open(save_file, "r") as file:
@@ -165,11 +168,11 @@ while True:
         if "inventory" in data and "fish" in data["inventory"]:
             fish_inventory = data["inventory"]["fish"]
             if fish_inventory:
-                print("Your fish inventory:")
+                print(helpers.color_text("Your fish inventory:", "bold"))
                 for i, fish in enumerate(fish_inventory, start=1):
                     print(f"{i}. {fish}")
                 try:
-                    choice = input("Enter the number of the fish you want to sell (or 'all' to sell everything): ")
+                    choice = input(helpers.color_text("Enter the number of the fish you want to sell (or 'all' to sell everything): ", "yellow"))
                     if choice == "all":
                         # Sell all fish functionality
                         total_value = 0
@@ -201,7 +204,7 @@ while True:
                         # Clear fish inventory
                         helpers.edit_json(save_file, "inventory.fish", [])
 
-                        print(f"You sold {sold_fish_count} fish for a total of {total_value} coins!")
+                        print(helpers.color_text(f"You sold {sold_fish_count} fish for a total of {total_value} coins!", "green"))
                         continue
 
                     choice_num = int(choice)
@@ -212,7 +215,7 @@ while True:
                             fish_name = sold_fish[:sold_fish.index("(")].strip()
                             fish_rarity = sold_fish[sold_fish.index("(")+1:sold_fish.index(")")]
                         else:
-                            print("Invalid fish format, cannot sell.")
+                            print(helpers.color_text("Invalid fish format, cannot sell.", "red"))
                             continue
 
 
@@ -226,7 +229,7 @@ while True:
                                     break
 
                         if fish_value is None:
-                            print("Could not find the value of this fish. Sell cancelled.")
+                            print(helpers.color_text("Could not find the value of this fish. Sell cancelled.", "red"))
                             continue
 
                         # Update fish inventory in save file
@@ -239,56 +242,56 @@ while True:
                         # Save updated coins to save file
                         helpers.edit_json(save_file, "coins", coins)
 
-                        print(f"You sold {sold_fish} for {fish_value} coins!")
+                        print(helpers.color_text(f"You sold {sold_fish} for {fish_value} coins!", "green"))
                     else:
-                        print("Invalid choice.")
+                        print(helpers.color_text("Invalid choice.", "red"))
                 except ValueError:
-                    print("Please enter a valid number.")
+                    print(helpers.color_text("Please enter a valid number.", "red"))
             else:
-                print("Your fish inventory is empty.")
+                print(helpers.color_text("Your fish inventory is empty.", "yellow"))
         else:
-            print("No fish found in inventory.")
+            print(helpers.color_text("No fish found in inventory.", "yellow"))
     elif user_input == "view inventory" or user_input == "3" or user_input == "inventory":
         with open(save_file, "r") as file:
             data = json.load(file)
 
         # Display coins
         coins = data.get("coins", 0)
-        print(f"Coins: {coins}")
+        print(f"{helpers.color_text('Coins:', 'bold')} {helpers.color_text(str(coins), 'yellow')}")
 
         # Display fishing rod
         fishing_rod = data.get("fishing_rod", "Basic")
-        print(f"Fishing Rod: {fishing_rod}")
+        print(f"{helpers.color_text('Fishing Rod:', 'bold')} {fishing_rod}")
 
         # Display XP if it exists
         if "xp" in data:
-            print(f"XP: {data['xp']}")
+            print(f"{helpers.color_text('XP:', 'bold')} {data['xp']}")
 
         # Display fish inventory
         if "inventory" in data and "fish" in data["inventory"]:
             fish_inventory = data["inventory"]["fish"]
             if fish_inventory:
-                print("\nYour fish inventory:")
+                print(helpers.color_text("\nYour fish inventory:", "bold"))
                 for i, fish in enumerate(fish_inventory, start=1):
                     print(f"{i}. {fish}")
             else:
-                print("\nYour fish inventory is empty, catch some fish!")
+                print(helpers.color_text("\nYour fish inventory is empty, catch some fish!", "yellow"))
         else:
-            print("\nNo fish found in inventory.")
+            print(helpers.color_text("\nNo fish found in inventory.", "yellow"))
 
         # Display other items if they exist
         if "inventory" in data:
             for item_type, items in data["inventory"].items():
                 if item_type != "fish" and items:  # Skip fish as we already displayed them
-                    print(f"\nYour {item_type} inventory:")
+                    print(f"\n{helpers.color_text(f'Your {item_type} inventory:', 'bold')}")
                     if isinstance(items, list):
                         for i, item in enumerate(items, start=1):
                             print(f"{i}. {item}")
                     else:
                         print(items)  # If it's not a list, just print the values of the fish inventory
     elif user_input == "enter shop" or user_input == "4" or user_input == "shop":
-        print("Welcome to the FishByte Shop!")
-        print("Available items for purchase:")
+        print(helpers.color_text("Welcome to the FishByte Shop!", "bold"))
+        print(helpers.color_text("Available items for purchase:", "cyan"))
 
         # Define shop items with their names, costs, and rod types
         shop_items = {
@@ -301,17 +304,17 @@ while True:
         # Display shop items
         for key, item in shop_items.items():
             if key != "4":
-                print(f"{key}. {item['name']} - {item['cost']} coins")
+                print(f"{key}. {helpers.color_text(item['name'], 'blue')} - {helpers.color_text(str(item['cost']), 'yellow')} coins")
             else:
                 print(f"{key}. {item['name']}")
 
-        query = input("Enter the number of the item you want to purchase: ")
+        query = input(helpers.color_text("Enter the number of the item you want to purchase: ", "yellow"))
 
         if query in shop_items:
             selected_item = shop_items[query]
 
             if query == "4":
-                print("Exiting shop...")
+                print(helpers.color_text("Exiting shop...", "yellow"))
             else:
                 item_name = selected_item['name']
                 item_cost = selected_item['cost']
@@ -323,25 +326,25 @@ while True:
                     helpers.edit_json(save_file, "coins", data.get("coins", 0) - item_cost)
                     helpers.edit_json(save_file, "fishing_rod", item_rod)
                     fishing_rod = item_rod  # Update the local variable
-                    print(f"You have purchased the {item_name}!")
+                    print(helpers.color_text(f"You have purchased the {item_name}!", "green"))
                 else:
-                    print("You do not have enough coins to purchase this item.")
+                    print(helpers.color_text("You do not have enough coins to purchase this item.", "red"))
         else:
-            print("Invalid option. Please try again.")
+            print(helpers.color_text("Invalid option. Please try again.", "red"))
 
     elif user_input == "save game" or user_input == "5" or user_input == "save":
-        print("Saving game...")
+        print(helpers.color_text("Saving game...", "green"))
         with open(save_file, "w") as file:
             json.dump(data, file, indent=4)
     elif user_input == "exit" or user_input == "6" or user_input == "quit" or user_input == "exit game":
-        print("Exiting game. Goodbye!")
+        print(helpers.color_text("Exiting game. Goodbye!", "yellow"))
         break
         exit()
     elif user_input == "play tutorial" or user_input == "7" or user_input == "tutorial":
-        print("Playing tutorial...")
+        print(helpers.color_text("Playing tutorial...", "cyan"))
         tutorial.play_tutorial()
     elif user_input == "reset game" or user_input == "8" or user_input == "reset":
-        print("Resetting game...")
+        print(helpers.color_text("Resetting game...", "red"))
         if os.path.exists(save_file):
             os.remove(save_file)
         default_data = {
@@ -367,27 +370,27 @@ while True:
         with open(save_file, "w") as f:
             json.dump(default_data, f, indent=4)
         data = default_data
-        print("Game reset. Welcome to FishByte!")
+        print(helpers.color_text("Game reset. Welcome to FishByte!", "green"))
         data = default_data
     elif user_input == "gallery" or user_input == "9":
-        print("Welcome to the FishByte Gallery!")
+        print(helpers.color_text("Welcome to the FishByte Gallery!", "bold"))
         with open(save_file, "r") as file:
             data = json.load(file)
 
         if "gallery" in data and data["gallery"]:
-            print("{:<20} {:<15}".format("Fish Name", "Rarity"))
+            print(helpers.color_text("{:<20} {:<15}".format("Fish Name", "Rarity"), "bold"))
             print("-" * 35)
             for fish_name, rarities in data["gallery"].items():
                 rarity_list = [r for r, c in rarities.items() if c]
                 if rarity_list:
                     print("{:<20} {:<15}".format(fish_name, ", ".join(rarity_list)))
         else:
-            print("Your gallery is empty. Catch some fish to fill it up!")
+            print(helpers.color_text("Your gallery is empty. Catch some fish to fill it up!", "yellow"))
     elif user_input == "stats" or user_input == "10":
         with open(save_file, "r") as file:
             data = json.load(file)
         if "stats" in data:
-            print("--- Your Stats ---")
+            print(helpers.color_text("--- Your Stats ---", "bold"))
             print(f"Total fish caught: {data['stats'].get('total_fish_caught', 0)}")
             most_valuable = data['stats'].get('most_valuable_fish', {})
             if most_valuable.get('name'):

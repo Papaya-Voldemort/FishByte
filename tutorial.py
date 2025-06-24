@@ -32,42 +32,42 @@ def play_tutorial():
     with open(fish_data_file, "r") as file:
         fish_data = json.load(file)
 
-    print("Welcome to the FishByte tutorial!")
+    print(helpers.color_text("Welcome to the FishByte tutorial!", "bold"))
     input("Press Enter to continue...")
 
-    print("\nIn FishByte, you're a fisher trying to make a living.")
-    print("You'll catch fish, sell them for coins, and upgrade your gear.")
+    print(helpers.color_text("\nIn FishByte, you're a fisher trying to make a living.", "cyan"))
+    print(helpers.color_text("You'll catch fish, sell them for coins, and upgrade your gear.", "cyan"))
     input("Press Enter to continue...")
 
     # --- Help Command ---
-    print("\nFirst things first, if you ever get stuck, just type 'help'.")
-    print("This will show you a list of all available commands.")
+    print(helpers.color_text("\nFirst things first, if you ever get stuck, just type 'help'.", "yellow"))
+    print(helpers.color_text("This will show you a list of all available commands.", "yellow"))
     input("Press Enter to continue...")
 
     # --- Fishing ---
-    print("\nLet's start with the most important command: 'fish'.")
-    print("Type 'fish' in the main menu to cast your line.")
-    print("When you're fishing, you'll need to be quick! A message will appear on screen telling you to press ENTER.")
-    print("The faster you press ENTER, the better your chances of catching a fish.")
-    print("Let's try it now!")
+    print(helpers.color_text("\nLet's start with the most important command: 'fish'.", "green"))
+    print(helpers.color_text("Type 'fish' in the main menu to cast your line.", "green"))
+    print(helpers.color_text("When you're fishing, you'll need to be quick! A message will appear on screen telling you to press ENTER.", "green"))
+    print(helpers.color_text("The faster you press ENTER, the better your chances of catching a fish.", "green"))
+    print(helpers.color_text("Let's try it now!", "bold"))
     input("Press Enter to cast your line...")
 
-    print("Pulling in the fish...")
+    print(helpers.color_text("Pulling in the fish...", "yellow"))
     time.sleep(random.uniform(0.5, 2.0))
 
-    print("!!! PRESS ENTER NOW !!!")
+    print(helpers.color_text("!!! PRESS ENTER NOW !!!", "red"))
     start_time = time.time()
     input()
     end_time = time.time()
 
     reaction_time = end_time - start_time
 
-    print(f"Nice! You reacted in {reaction_time:.2f}s.")
+    print(helpers.color_text(f"Nice! You reacted in {reaction_time:.2f}s.", "green"))
 
-    print("Fish caught!")
+    print(helpers.color_text("Fish caught!", "green"))
     # Hardcode a fish for the tutorial to ensure consistency
     chosen_fish = ('Discus', 'Bronze', {'value': 40})
-    print(f"You caught a: {chosen_fish[0]} ({chosen_fish[1]})")
+    print(f"You caught a: {helpers.color_text(chosen_fish[0], 'blue')} ({helpers.color_text(chosen_fish[1], 'purple')})")
     helpers.edit_json(save_file, "inventory.fish", chosen_fish[0] + " (" + chosen_fish[1] + ")")
     with open(save_file, "r") as file:
         data = json.load(file)
@@ -75,29 +75,29 @@ def play_tutorial():
     helpers.edit_json(save_file, "xp", current_xp + 10)
 
     # --- Gallery ---
-    print("\nNice catch! Every new fish you catch is added to your gallery.")
-    print("Use the 'gallery' command to see all the unique fish you've discovered.")
+    print(helpers.color_text("\nNice catch! Every new fish you catch is added to your gallery.", "cyan"))
+    print(helpers.color_text("Use the 'gallery' command to see all the unique fish you've discovered.", "cyan"))
     input("Press Enter to continue...")
 
-    print("\nLet's check your gallery now.")
+    print(helpers.color_text("\nLet's check your gallery now.", "yellow"))
     input("Press Enter to view your gallery...")
 
     gallery_data = {chosen_fish[0]: {"Bronze": 1}}
-    print("\n--- TUTORIAL GALLERY ---")
+    print(helpers.color_text("\n--- TUTORIAL GALLERY ---", "bold"))
     for fish_name, rarities in gallery_data.items():
         print(f"{fish_name}:")
         for rarity, count in rarities.items():
             print(f"  - {rarity}: Caught {count} time(s)")
-    print("------------------------")
+    print(helpers.color_text("------------------------", "bold"))
     input("Press Enter to continue...")
 
 
     input("Press Enter to continue...")
 
     # --- Inventory ---
-    print("\nAfter you've caught some fish, you'll want to see what you have.")
-    print("Use the 'view inventory' command to see your fish, coins, and fishing rod.")
-    print("Let's look at your inventory now.")
+    print(helpers.color_text("\nAfter you've caught some fish, you'll want to see what you have.", "cyan"))
+    print(helpers.color_text("Use the 'view inventory' command to see your fish, coins, and fishing rod.", "cyan"))
+    print(helpers.color_text("Let's look at your inventory now.", "yellow"))
     input("Press Enter to continue...")
 
     with open(save_file, "r") as file:
