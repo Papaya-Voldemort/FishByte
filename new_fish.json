@@ -284,7 +284,7 @@
             "name": "Walleye",
             "rarities": {
                 "Bronze":         { "value": 50, "catch_rate": { "Basic": 800, "Advanced": 650, "Elite": 0 }},
-                "Silver":         { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
+                "Silver":         { "value": 175, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Gold":           { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Platinum":       { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},
                 "Diamond":        { "value": 0, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0 }},

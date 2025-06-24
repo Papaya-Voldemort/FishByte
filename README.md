@@ -44,8 +44,32 @@ My ultimate goal for FishByte is to develop it into a full-fledged game with a g
 
 ## How to Play
 
-To play FishByte, you'll need to have Python installed on your computer. Then, simply run the following command in your terminal once you've cloned the repository:
+To play FishByte, you'll need to have Python and Git installed on your computer. Follow these steps to get started:
 
-```
-python main.py
-```
+1.  **Clone the Repository**
+    
+    Open your terminal or command prompt and run the following command to download the game files:
+    ```bash
+    git clone https://github.com/Papaya-Voldemort/FishByte.git
+    ```
+
+2.  **Navigate to the Project Directory**
+    
+    Change your current directory to the newly created `FishByte` folder:
+    ```bash
+    cd FishByte
+    ```
+
+3.  **Install Required Dependencies**
+    
+    Install the necessary Python packages by running:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Run the Game**
+    
+    You're all set! Start the game with the following command:
+    ```bash
+    python main.py
+    ```
