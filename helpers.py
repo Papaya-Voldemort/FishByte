@@ -58,11 +58,12 @@ def edit_json(file_path, key, value):
         key (str): The key to add or edit (can be nested, e.g., "inventory.fish").
         value: The value to associate with the key.
     """
+    data = {}
     try:
         with open(file_path, 'r') as file:
             data = json.load(file)
     except FileNotFoundError:
-        data = {}  # Create an empty dictionary if the file doesn't exist
+        pass # data is already {} so we will create a new file
 
     keys = key.split('.')
     current = data
@@ -89,12 +90,14 @@ def edit_json(file_path, key, value):
         json.dump(data, file, indent=4)  # Write the updated data back to the file with indentation for readability
 
 
-def play_background_music(filename):
+def play_background_music(filename, volume_change_db=0):
     """Plays background music in a loop, supports .mp3 and .wav natively."""
     try:
         if filename.lower().endswith(".mp3"):
             # Load mp3 and convert to WaveObject directly
             sound = AudioSegment.from_mp3(filename)
+            # Adjust volume
+            sound += volume_change_db
             # Convert to raw data
             raw_data = sound.raw_data
             # Get frame rate, sample width, and channels
@@ -110,7 +113,22 @@ def play_background_music(filename):
             )
         elif filename.lower().endswith(".wav"):
             # Load wav file
-            wave_obj = sa.WaveObject.from_wave_file(filename)
+            sound = AudioSegment.from_wav(filename)
+            # Adjust volume
+            sound += volume_change_db
+            # Convert to raw data
+            raw_data = sound.raw_data
+            # Get frame rate, sample width, and channels
+            frame_rate = sound.frame_rate
+            sample_width = sound.sample_width
+            channels = sound.channels
+            # Load raw data into WaveObject
+            wave_obj = sa.WaveObject(
+                raw_data,
+                num_channels=channels,
+                bytes_per_sample=sample_width,
+                sample_rate=frame_rate
+            )
         else:
             print(f"Error: Unsupported file format. Only .mp3 and .wav are supported.")
             return

@@ -15,8 +15,10 @@ import tutorial
 
 
 # TODO Make sound volume adjustable from the save settings
+with open("save.json", "r") as file:
+    volume = json.load(file).get("settings", {}).get("music_volume")
 background_music_file = "song.wav"
-helpers.play_background_music(background_music_file)
+helpers.play_background_music(background_music_file, volume)
 
 save_file = "save.json"
 

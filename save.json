@@ -13,7 +13,7 @@
         }
     },
     "settings": {
-        "music_volume": 1.0,
+        "music_volume": -15.0,
         "effects_volume": 1.0
     },
     "gallery": {}
