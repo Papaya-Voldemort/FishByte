@@ -1,19 +1,20 @@
 {
-  "coins": 0,
-  "fishing_rod": "Basic",
-  "xp": 0,
-  "inventory": {
-    "fish": []
-  },
-  "stats": {
-    "total_fish_caught": 0,
-    "most_valuable_fish": {
-      "name": null,
-      "value": 0
-    }
-  },
-  "settings": {
-    "music_volume": 1.0,
-    "effects_volume": 1.0
-  }
+    "coins": 0,
+    "fishing_rod": "Basic",
+    "xp": 0,
+    "inventory": {
+        "fish": []
+    },
+    "stats": {
+        "total_fish_caught": 0,
+        "most_valuable_fish": {
+            "name": null,
+            "value": 0
+        }
+    },
+    "settings": {
+        "music_volume": 1.0,
+        "effects_volume": 1.0
+    },
+    "gallery": {}
 }

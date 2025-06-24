@@ -5,6 +5,9 @@ import simpleaudio as sa
 import threading
 from pydub import AudioSegment
 import os
+import sys
+import termios
+import select
 
 def fish(fish_data, fishing_rod):
     weighted_choices = []
@@ -49,7 +52,7 @@ def edit_json(file_path, key, value):
     if keys[-1] == 'fish' and keys[-2] == 'inventory':
         if not isinstance(value, list):
             # Append a single fish string
-            if not isinstance(current[keys[-1]], list):
+            if keys[-1] not in current or not isinstance(current[keys[-1]], list):
                 current[keys[-1]] = []
             current[keys[-1]].append(value)
         else:
@@ -106,3 +109,20 @@ def play_background_music(filename):
     # Create and start the music thread
     music_thread = threading.Thread(target=loop_music, daemon=True)
     music_thread.start()
+
+def flush_input():
+    """Flushes the input buffer on Unix-like systems."""
+    try:
+        termios.tcflush(sys.stdin, termios.TCIOFLUSH)
+    except (AttributeError, termios.error):
+        # This will fail on Windows, but the user is on macOS.
+        pass
+
+def is_input_waiting():
+    """Checks if there is input waiting on stdin."""
+    try:
+        # On Windows, this will not work. But the user is on macOS.
+        # The `select` call checks for readability on stdin with a timeout of 0.
+        return select.select([sys.stdin], [], [], 0) == ([sys.stdin], [], [])
+    except:
+        return False

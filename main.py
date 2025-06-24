@@ -40,6 +40,8 @@ with open(save_file, "r") as file:
 # Check if 'fishing_rod' exists in the save data, otherwise default to "Basic"
 fishing_rod = data.get("fishing_rod", "Basic")
 
+last_fish_time = 0
+
 while True:
     user_input = input("What would you like to do? (type 'help' for options): ").strip().lower()
     if user_input == "help":
@@ -52,9 +54,10 @@ while True:
               "\n6. Exit "
               "\n7. Play Tutorial"
               "\n8. Reset Game"
+              "\n9. Gallery"
+              "\n10. Stats"
               "\n\nYou can also type the number corresponding to the action (e.g., '1' for Fish).")
     elif user_input == "fish" or user_input == "1":
-        last_fish_time = 0
         is_fishing = False
         #global space_pressed, last_space_time, bar_color
         while True:
@@ -71,51 +74,88 @@ while True:
                 break  # Exit the fishing loop
 
             if action == "":
-                print("Fishing...\n")
+                is_fishing = True
                 current_time = time.time()
                 if current_time - last_fish_time < 1:
                     #print("Please wait a moment before fishing again...")
-                    time.sleep(max(0, 1 - (current_time - last_fish_time)))
+                    is_fishing = False
                     continue
 
-                is_fishing = True
                 # Determine the fish before showing the loading bar
                 chosen_fish = helpers.fish(fish_data, fishing_rod)
                 fish_rarity = chosen_fish[1]
 
-                # Set loading time based on the rarity of the fish
-                loading_time_ranges = {
-                    "Bronze": (1, 4),
-                    "Silver": (2, 7),
-                    "Gold": (3, 9),
-                    "Platinum": (6, 12),
-                    "Diamond": (8, 14),
-                    "Mythic": (10, 16),
-                    "Void": (12, 18),
-                    "Celestial": (14, 20),
-                    "Ancient Fossil": (16, 22)
-                }
-
-                min_time, max_time = loading_time_ranges.get(fish_rarity, (1, 5))  # Default to Bronze if rarity not found
-                loading_time = random.uniform(min_time, max_time)
-
+                # --- NEW FISHING MINI-GAME ---
                 print("Pulling in the fish...")
+                time.sleep(random.uniform(0.5, 2.0))  # Wait for a random time before showing the prompt
 
-                # Custom tqdm class (no color support needed now)
-                progress_bar = tqdm.tqdm(range(100), desc="Fishing", ncols=80, bar_format='{l_bar}{bar}| {n_fmt}/{total_fmt}')
-                for i in progress_bar:
-                    time.sleep(loading_time / 100)
-                progress_bar.close()
+                # Check for premature input (spamming)
+                if helpers.is_input_waiting():
+                    print("You scared the fish away by making too much noise!")
+                    helpers.flush_input() # Clear the spam
+                    is_fishing = False
+                    last_fish_time = time.time()
+                    continue
+
+                helpers.flush_input()  # Clear the input buffer
+                print("!!! PRESS ENTER NOW !!!")
+                start_time = time.time()
+                input()
+                end_time = time.time()
+
+                reaction_time = end_time - start_time
+
+                # Difficulty scales with rarity of the fish
+                max_reaction_time = {
+                    "Bronze": 2.0,
+                    "Silver": 1.5,
+                    "Gold": 1.0,
+                    "Platinum": 0.8,
+                    "Diamond": 0.7,
+                    "Mythic": 0.6,
+                    "Void": 0.5,
+                    "Celestial": 0.4,
+                    "Ancient Fossil": 0.3
+                }.get(fish_rarity, 2.0)
+
+                if reaction_time > max_reaction_time:
+                    print(f"Too slow! Your reaction time of {reaction_time:.2f}s wasn't fast enough. The fish got away.")
+                    is_fishing = False
+                    last_fish_time = time.time()
+                    continue
+
+                print(f"Nice! You reacted in {reaction_time:.2f}s.")
+                # --- END OF MINI-GAME ---
 
                 print("Fish caught!")
                 print(f"Chosen fish: {chosen_fish[0]}, Rarity: {chosen_fish[1]}, Stats: {chosen_fish[2]}")
                 helpers.edit_json(save_file, "inventory.fish", chosen_fish[0] + " (" + chosen_fish[1] + ")")
+                import json
+
+                # Update gallery in save file after catching a fish
+                fish_name = chosen_fish[0]
+                fish_rarity = chosen_fish[1]
+
+                with open(save_file, "r") as file:
+                    data = json.load(file)
+
+                if "gallery" not in data:
+                    data["gallery"] = {}
+
+                if fish_name not in data["gallery"]:
+                    data["gallery"][fish_name] = {}
+
+                data["gallery"][fish_name][fish_rarity] = True
+
+                with open(save_file, "w") as file:
+                    json.dump(data, file, indent=4)
                 with open(save_file, "r") as file:
                     data = json.load(file)
                 current_xp = data.get("xp", 0)
                 helpers.edit_json(save_file, "xp", current_xp + 10)
                 last_fish_time = time.time()
                 is_fishing = False  # Reset fishing status after completion
+                continue
             else:
                 print("Invalid input. Please press Enter to fish or type 'exit' to stop.")
         continue  # Return to the main game loop after fishing
@@ -165,8 +205,8 @@ while True:
                         continue
 
                     choice_num = int(choice)
-                    if 0 <= choice_num < len(fish_inventory):
-                        sold_fish = fish_inventory.pop(choice_num)
+                    if 1 <= choice_num <= len(fish_inventory):
+                        sold_fish = fish_inventory.pop(choice_num - 1)
                         # Parse fish name and rarity
                         if "(" in sold_fish and ")" in sold_fish:
                             fish_name = sold_fish[:sold_fish.index("(")].strip()
@@ -321,13 +361,41 @@ while True:
             "settings": {
                 "music_volume": 1.0,
                 "effects_volume": 1.0
-            }
+            },
+            "gallery": {}
         }
         with open(save_file, "w") as f:
             json.dump(default_data, f, indent=4)
+        data = default_data
         print("Game reset. Welcome to FishByte!")
         data = default_data
+    elif user_input == "gallery" or user_input == "9":
+        print("Welcome to the FishByte Gallery!")
+        with open(save_file, "r") as file:
+            data = json.load(file)
+
+        if "gallery" in data and data["gallery"]:
+            print("{:<20} {:<15}".format("Fish Name", "Rarity"))
+            print("-" * 35)
+            for fish_name, rarities in data["gallery"].items():
+                rarity_list = [r for r, c in rarities.items() if c]
+                if rarity_list:
+                    print("{:<20} {:<15}".format(fish_name, ", ".join(rarity_list)))
+        else:
+            print("Your gallery is empty. Catch some fish to fill it up!")
+    elif user_input == "stats" or user_input == "10":
+        with open(save_file, "r") as file:
+            data = json.load(file)
+        if "stats" in data:
+            print("--- Your Stats ---")
+            print(f"Total fish caught: {data['stats'].get('total_fish_caught', 0)}")
+            most_valuable = data['stats'].get('most_valuable_fish', {})
+            if most_valuable.get('name'):
+                print(f"Most valuable fish: {most_valuable.get('name')} ({most_valuable.get('value', 0)} coins)")
+            else:
+                print("Most valuable fish: None")
+            print("------------------")
+        else:
+            print("No stats found. Catch some fish to see your stats!")
     else:
         print("Invalid command. Type 'help' for options.")
-
-

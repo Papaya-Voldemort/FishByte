@@ -1,19 +1,89 @@
 {
-  "coins": 0,
-  "fishing_rod": "Basic",
-  "xp": 0,
-  "inventory": {
-    "fish": []
-  },
-  "stats": {
-    "total_fish_caught": 0,
-    "most_valuable_fish": {
-      "name": null,
-      "value": 0
+    "coins": 245,
+    "fishing_rod": "Basic",
+    "xp": 200,
+    "inventory": {
+        "fish": [
+            "Perch (Bronze)",
+            "Trout (Gold)",
+            "Oscar (Bronze)",
+            "Angelfish (Silver)",
+            "Gar (Bronze)",
+            "Sturgeon (Bronze)",
+            "Discus (Bronze)",
+            "Cod (Bronze)",
+            "Cod (Bronze)",
+            "Goldfish (Bronze)",
+            "Barracuda (Bronze)",
+            "Betta (Bronze)",
+            "Betta (Bronze)",
+            "Mackerel (Bronze)",
+            "Goldfish (Bronze)",
+            "Flowerhorn Cichlid (Bronze)",
+            "Clownfish (Silver)",
+            "Betta (Silver)"
+        ]
+    },
+    "stats": {
+        "total_fish_caught": 0,
+        "most_valuable_fish": {
+            "name": null,
+            "value": 0
+        }
+    },
+    "settings": {
+        "music_volume": 1.0,
+        "effects_volume": 1.0
+    },
+    "gallery": {
+        "Carp": {
+            "Silver": true
+        },
+        "Cichlid": {
+            "Bronze": true
+        },
+        "Perch": {
+            "Bronze": true
+        },
+        "Trout": {
+            "Gold": true
+        },
+        "Oscar": {
+            "Bronze": true
+        },
+        "Angelfish": {
+            "Silver": true
+        },
+        "Gar": {
+            "Bronze": true
+        },
+        "Sturgeon": {
+            "Bronze": true
+        },
+        "Discus": {
+            "Bronze": true
+        },
+        "Cod": {
+            "Bronze": true
+        },
+        "Goldfish": {
+            "Bronze": true
+        },
+        "Barracuda": {
+            "Bronze": true
+        },
+        "Betta": {
+            "Bronze": true,
+            "Silver": true
+        },
+        "Mackerel": {
+            "Bronze": true
+        },
+        "Flowerhorn Cichlid": {
+            "Bronze": true
+        },
+        "Clownfish": {
+            "Silver": true
+        }
     }
-  },
-  "settings": {
-    "music_volume": 1.0,
-    "effects_volume": 1.0
-  }
 }

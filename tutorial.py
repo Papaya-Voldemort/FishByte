@@ -39,36 +39,59 @@ def play_tutorial():
     print("You'll catch fish, sell them for coins, and upgrade your gear.")
     input("Press Enter to continue...")
 
+    # --- Help Command ---
+    print("\nFirst things first, if you ever get stuck, just type 'help'.")
+    print("This will show you a list of all available commands.")
+    input("Press Enter to continue...")
+
     # --- Fishing ---
     print("\nLet's start with the most important command: 'fish'.")
     print("Type 'fish' in the main menu to cast your line.")
+    print("When you're fishing, you'll need to be quick! A message will appear on screen telling you to press ENTER.")
+    print("The faster you press ENTER, the better your chances of catching a fish.")
     print("Let's try it now!")
     input("Press Enter to cast your line...")
 
-    chosen_fish = helpers.fish(fish_data, "Basic")
-    fish_rarity = chosen_fish[1]
-
-    loading_time_ranges = {
-        "Bronze": (1, 4), "Silver": (2, 7), "Gold": (3, 9),
-        "Platinum": (6, 12), "Diamond": (8, 14), "Mythic": (10, 16),
-        "Void": (12, 18), "Celestial": (14, 20), "Ancient Fossil": (16, 22)
-    }
-    min_time, max_time = loading_time_ranges.get(fish_rarity, (1, 5))
-    loading_time = random.uniform(min_time, max_time)
-
     print("Pulling in the fish...")
-    progress_bar = tqdm.tqdm(range(100), desc="Fishing", ncols=80, bar_format='{l_bar}{bar}| {n_fmt}/{total_fmt}')
-    for i in progress_bar:
-        time.sleep(loading_time / 100)
-    progress_bar.close()
+    time.sleep(random.uniform(0.5, 2.0))
+
+    print("!!! PRESS ENTER NOW !!!")
+    start_time = time.time()
+    input()
+    end_time = time.time()
+
+    reaction_time = end_time - start_time
+
+    print(f"Nice! You reacted in {reaction_time:.2f}s.")
 
     print("Fish caught!")
+    # Hardcode a fish for the tutorial to ensure consistency
+    chosen_fish = ('Discus', 'Bronze', {'value': 40})
     print(f"You caught a: {chosen_fish[0]} ({chosen_fish[1]})")
     helpers.edit_json(save_file, "inventory.fish", chosen_fish[0] + " (" + chosen_fish[1] + ")")
     with open(save_file, "r") as file:
         data = json.load(file)
     current_xp = data.get("xp", 0)
     helpers.edit_json(save_file, "xp", current_xp + 10)
+
+    # --- Gallery ---
+    print("\nNice catch! Every new fish you catch is added to your gallery.")
+    print("Use the 'gallery' command to see all the unique fish you've discovered.")
+    input("Press Enter to continue...")
+
+    print("\nLet's check your gallery now.")
+    input("Press Enter to view your gallery...")
+
+    gallery_data = {chosen_fish[0]: {"Bronze": 1}}
+    print("\n--- TUTORIAL GALLERY ---")
+    for fish_name, rarities in gallery_data.items():
+        print(f"{fish_name}:")
+        for rarity, count in rarities.items():
+            print(f"  - {rarity}: Caught {count} time(s)")
+    print("------------------------")
+    input("Press Enter to continue...")
+
+
     input("Press Enter to continue...")
 
     # --- Inventory ---
@@ -117,6 +140,19 @@ def play_tutorial():
 
     print(f"You sold {fish_to_sell} for {fish_value} coins!")
     print(f"You now have {coins} coins.")
+    input("Press Enter to continue...")
+
+    # --- Stats ---
+    print("\nWant to see how you're doing? Use the 'stats' command.")
+    print("This will show you your total fish caught and your most valuable catch.")
+    input("Press Enter to see your stats...")
+
+    with open(save_file, "r") as file:
+        data = json.load(file)
+    print("\n--- TUTORIAL STATS ---")
+    print(f"Total fish caught: 1")
+    print(f"Most valuable fish: {fish_name} ({fish_value} coins)")
+    print("----------------------")
     input("Press Enter to continue...")
 
     # --- Shop ---
