@@ -7,8 +7,6 @@ import json
 import helpers
 import time
 import tutorial
-import colorama
-from colorama import Fore, Style
 
 
 

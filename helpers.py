@@ -4,10 +4,15 @@ import simpleaudio as sa
 import threading
 from pydub import AudioSegment
 import sys
-import termios
-import select
 import colorama
 from colorama import Fore, Style
+
+# Platform-specific imports for input handling
+if sys.platform == "win32":
+    import msvcrt
+else:
+    import termios
+    import select
 
 colorama.init(autoreset=True)
 
@@ -130,18 +135,24 @@ def play_background_music(filename):
     music_thread.start()
 
 def flush_input():
-    """Flushes the input buffer on Unix-like systems."""
-    try:
-        termios.tcflush(sys.stdin, termios.TCIOFLUSH)
-    except (AttributeError, termios.error):
-        # This will fail on Windows, but the user is on macOS.
-        pass
+    """Flushes the input buffer."""
+    if sys.platform == "win32":
+        while msvcrt.kbhit():
+            msvcrt.getch()
+    else:
+        try:
+            termios.tcflush(sys.stdin, termios.TCIOFLUSH)
+        except (AttributeError, termios.error):
+            pass
 
 def is_input_waiting():
     """Checks if there is input waiting on stdin."""
-    try:
-        # On Windows, this will not work. But the user is on macOS.
-        # The `select` call checks for readability on stdin with a timeout of 0.
-        return select.select([sys.stdin], [], [], 0) == ([sys.stdin], [], [])
-    except:
-        return False
+    if sys.platform == "win32":
+        return msvcrt.kbhit()
+    else:
+        try:
+            # On Windows, this will not work. But the user is on macOS.
+            # The `select` call checks for readability on stdin with a timeout of 0.
+            return select.select([sys.stdin], [], [], 0) == ([sys.stdin], [], [])
+        except:
+            return False
