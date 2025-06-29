@@ -25,14 +25,14 @@ jobs:
 
       - name: Build .exe
         run: |
-          pyinstaller --onefile --name "MyGame" my_game.py
+          pyinstaller --onefile --name "FishByte" FishByte.py
         # The executable will be in the `dist` folder
 
       - name: Upload .exe artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MyGame-Windows
-          path: dist/MyGame.exe
+          name: FishByte
+          path: dist/FishByte.exe
 
   build-macos:
     runs-on: macos-latest
@@ -52,11 +52,11 @@ jobs:
 
       - name: Build .app
         run: |
-          pyinstaller --onefile --name "MyGame" --windowed my_game.py
+          pyinstaller --onefile --name "FishByte" --windowed main.py
         # The `.app` file will be in the `dist` folder
 
       - name: Upload .app artifact
         uses: actions/upload-artifact@v4
         with:
           name: MyGame-macOS
-          path: dist/MyGame.app
+          path: dist/FishByte.app
