@@ -21,11 +21,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pyinstaller
+          pip install pyinstaller simpleaudio
 
       - name: Build .exe
         run: |
-          pyinstaller --onefile --name "FishByte" main.py
+          pyinstaller --onefile --name "FishByte" --hidden-import=simpleaudio main.py
         # The executable will be in the `dist` folder
 
       - name: Upload .exe artifact
@@ -48,7 +48,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pyinstaller
+          pip install pyinstaller simpleaudio
 
       - name: Build .app
         run: |
