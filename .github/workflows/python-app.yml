@@ -55,8 +55,14 @@ jobs:
           pyinstaller --onefile --name "FishByte" --windowed main.py
         # The `.app` file will be in the `dist` folder
 
-      - name: Upload .app artifact
+      - name: Create DMG
+        run: |
+          mkdir -p dist/dmg
+          hdiutil create -volname "FishByte" -srcfolder dist/FishByte.app -ov -format UDZO dist/dmg/FishByte.dmg
+        # This creates a DMG file in the `dist/dmg` folder
+
+      - name: Upload .dmg artifact
         uses: actions/upload-artifact@v4
         with:
-          name: FishByte
-          path: dist/FishByte.app
+          name: FishByte-macOS
+          path: dist/dmg/FishByte.dmg
