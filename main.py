@@ -76,7 +76,7 @@ fishing_rod = data.get("fishing_rod", "Basic")
 
 last_fish_time = 0
 
-# Main game loop with command options
+# Main game loop with command option
 while True:
     user_input = input(helpers.color_text("What would you like to do? (type 'help' for options): ", "yellow")).strip().lower()
     if user_input == "help":
