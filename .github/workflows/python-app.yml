@@ -25,7 +25,7 @@ jobs:
 
       - name: Build .exe
         run: |
-          pyinstaller --onefile --name "FishByte" --hidden-import=simpleaudio main.py
+          pyinstaller --onefile --name "FishByte" --hidden-import=simpleaudio --hidden-import=colorama --hidden-import=pydub main.py
         # The executable will be in the `dist` folder
 
       - name: Upload .exe artifact
