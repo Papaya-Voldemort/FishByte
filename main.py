@@ -76,6 +76,7 @@ fishing_rod = data.get("fishing_rod", "Basic")
 
 last_fish_time = 0
 
+# Main game loop with command options
 while True:
     user_input = input(helpers.color_text("What would you like to do? (type 'help' for options): ", "yellow")).strip().lower()
     if user_input == "help":
@@ -110,7 +111,7 @@ while True:
 
         if location_choice == "1":
             location_name = "Home Pond"
-            fish_data_file = "fish/new_fish.json"
+            fish_data_file = "fish/home_pond.json"
         elif location_choice == "2":
             location_name = "River"
             required_ticket = "river"
