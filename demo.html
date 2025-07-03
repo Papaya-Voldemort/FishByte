@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎣 FishByte - The Ultimate Text-Based Fishing Adventure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: slideDown 0.8s ease-out;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #8B5CF6, #A855F7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: pulse 2s infinite;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Banner Image */
+        .banner-container {
+            text-align: center;
+            margin: 2rem 0;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .banner-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.3);
+            border: 3px solid #8B5CF6;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .banner-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(139, 92, 246, 0.4);
+        }
+
+        /* Section Cards */
+        .section-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.8s ease-out;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-5px);
+            border-color: #8B5CF6;
+            box-shadow: 0 20px 60px rgba(139, 92, 246, 0.2);
+        }
+
+        .section-card h2 {
+            color: #8B5CF6;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .section-card h3 {
+            color: #A855F7;
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+
+        /* Quick Setup */
+        .quick-setup {
+            background: linear-gradient(135deg, #8B5CF6, #A855F7);
+            color: white;
+            text-align: center;
+        }
+
+        .quick-setup h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Code Blocks with Copy Buttons */
+        .code-container {
+            position: relative;
+            margin: 1.5rem 0;
+        }
+
+        .code-block {
+            background: rgba(0, 0, 0, 0.8);
+            color: #00ff88;
+            padding: 1.5rem;
+            border-radius: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            overflow-x: auto;
+            border: 2px solid #8B5CF6;
+            position: relative;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #8B5CF6;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .copy-btn:hover {
+            background: #A855F7;
+            transform: scale(1.05);
+        }
+
+        .copy-btn.copied {
+            background: #10B981;
+            transform: scale(1.1);
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 2px solid #8B5CF6;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 3px solid #8B5CF6;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, #8B5CF6, #A855F7);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            animation: pulse 3s infinite;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #8B5CF6;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+
+        .cta-button:hover {
+            background: transparent;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .section-card {
+                padding: 1.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Floating Animation */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Sparkle Effect */
+        .sparkle {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sparkle::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: sparkle 3s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: translateX(-100%) translateY(-100%) rotate(45deg);
+            }
+            100% {
+                transform: translateX(100%) translateY(100%) rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>🎣 FishByte</h1>
+            <p class="subtitle">The Ultimate Text-Based Fishing Adventure</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="banner-container">
+            <img src="images/banner.png" alt="FishByte Banner" class="banner-img floating">
+        </div>
+
+        <div class="section-card quick-setup sparkle">
+            <h2>🚀 Get Started in Under 2 Minutes!</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Ready to dive into the most addictive fishing game you've ever played? Here's how to get hooked:</p>
+
+            <h3>⚡ Quick Setup</h3>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this, 'quick-setup')">Copy</button>
+                <div class="code-block">
+# 1. Clone & Go
+git clone https://github.com/Papaya-Voldemort/FishByte.git && cd FishByte
+
+# 2. Install & Play
+pip install -r requirements.txt && python main.py
+                </div>
+            </div>
+
+            <p><strong>macOS Users:</strong> Use <code>pip3</code> and <code>python3</code> instead!</p>
+        </div>
+
+        <div class="section-card">
+            <h2>🌟 Why FishByte Will Blow Your Mind</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Pure Nostalgia Meets Modern Gaming</h3>
+                    <p>Classic text-based RPG experience with a fresh twist. Handcrafted fish database with AI balanced content by a real fishing enthusiast!</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🐟</div>
+                    <h3>Massive Fish Collection</h3>
+                    <p>Hundreds of unique fish across 5 locations with 9 rarity tiers from Bronze to Ancient Fossil. Legendary catches like Coelacanth and Megalodon await!</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛒</div>
+                    <h3>Progressive Upgrade System</h3>
+                    <p>Shop system with three rod tiers. Strategic gameplay: Better equipment = Better catches = More coins!</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Perfect for Everyone</h3>
+                    <p>Built-in tutorial for new players, deep progression for hardcore gamers, and pick-up-and-play for casual players!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>🖼️ See FishByte in Action</h2>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/fish-catch.png" alt="Fish Catching Action">
+                    <div class="gallery-caption">🎣 Epic Fish Catches</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/stats.png" alt="Game Statistics">
+                    <div class="gallery-caption">📊 Track Your Progress</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Install-Screenshot.png" alt="Installation Process">
+                    <div class="gallery-caption">⚡ Easy Installation</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Json-example.png" alt="Fish Database">
+                    <div class="gallery-caption">🐟 Rich Fish Database</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>🏆 What Players Are Saying</h2>
+            <div style="text-align: center; font-style: italic; font-size: 1.1rem;">
+                <p style="margin: 1rem 0; color: #666;">
+                    <strong>"I thought I'd try it for 5 minutes... 3 hours later I'm still hunting for that Diamond Megalodon!"</strong>
+                </p>
+                <p style="margin: 1rem 0; color: #666;">
+                    <strong>"The fish database is incredible - you can tell this was made with real passion."</strong>
+                </p>
+                <p style="margin: 1rem 0; color: #666;">
+                    <strong>"Best text-based game I've played since the classics!"</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>🎣 Experience the Adventure</h2>
+            <h3>🔄 Core Gameplay Loop:</h3>
+            <ol style="font-size: 1.1rem; margin-left: 2rem;">
+                <li><strong>Cast Your Line</strong> - Fish in 5 unique locations</li>
+                <li><strong>Catch & Collect</strong> - Build your fish collection</li>
+                <li><strong>Sell & Upgrade</strong> - Turn catches into better equipment</li>
+                <li><strong>Hunt Legendaries</strong> - Chase those ultra-rare Ancient Fossil fish</li>
+                <li><strong>Save & Continue</strong> - Your progress is always saved</li>
+            </ol>
+
+            <h3>✨ What Makes FishByte Special:</h3>
+            <ul style="font-size: 1.1rem; margin-left: 2rem;">
+                <li>🎨 <strong>Handcrafted Content:</strong> Every fish personally designed</li>
+                <li>🔄 <strong>Endless Replayability:</strong> Always something rarer to catch</li>
+                <li>💎 <strong>Collector's Dream:</strong> Multiple rarities for every species</li>
+                <li>🌊 <strong>Location Variety:</strong> Each spot has unique fish and challenges</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>💻 System Requirements</h2>
+            <div style="text-align: center; font-size: 1.2rem;">
+                <p>✅ Python 3.x</p>
+                <p>✅ Git</p>
+                <p>✅ 2-5 minutes of your time</p>
+                <p>✅ A passion for fishing (or just a love for great games!)</p>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>🚀 Get FishByte Now</h2>
+            <div class="code-container">
+                <button class="copy-btn" onclick="copyCode(this, 'install-commands')">Copy</button>
+                <div class="code-block">
+git clone https://github.com/Papaya-Voldemort/FishByte.git
+cd FishByte
+pip install -r requirements.txt
+python main.py
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>🎯 Join the FishByte Community</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Ready to start your fishing adventure?</p>
+            <a href="https://github.com/Papaya-Voldemort/FishByte" class="cta-button">🌟 Get FishByte on GitHub</a>
+            <div style="margin-top: 2rem;">
+                <p>🌟 Star us on GitHub if you catch something awesome!</p>
+                <p>🐛 Report bugs - Help make FishByte even better</p>
+                <p>💡 Suggest features - Your ideas shape the future</p>
+                <p>🎣 Share your legendary catches - Show off your collection!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(button, type) {
+            const codeBlock = button.nextElementSibling;
+            const text = codeBlock.innerText;
+
+            navigator.clipboard.writeText(text).then(() => {
+                button.textContent = 'Copied!';
+                button.classList.add('copied');
+
+                setTimeout(() => {
+                    button.textContent = 'Copy';
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                button.textContent = 'Error';
+                setTimeout(() => {
+                    button.textContent = 'Copy';
+                }, 2000);
+            });
+        }
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-card, .feature-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Add sparkle effect on hover
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('sparkle');
+            });
+
+            card.addEventListener('mouseleave', () => {
+                setTimeout(() => {
+                    card.classList.remove('sparkle');
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
