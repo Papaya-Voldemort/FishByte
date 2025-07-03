@@ -1,4 +1,186 @@
 {
-    "fish": []
+    "fish": [
+        {
+            "name": "Anglerfish",
+            "rarities": {
+                "Bronze": { "value": 50, "catch_rate": { "Basic": 400, "Advanced": 50, "Elite": 0 } },
+                "Silver": { "value": 150, "catch_rate": { "Basic": 50, "Advanced": 100, "Elite": 50 } },
+                "Gold": { "value": 500, "catch_rate": { "Basic": 5, "Advanced": 40, "Elite": 100 } },
+                "Platinum": { "value": 1500, "catch_rate": { "Basic": 1, "Advanced": 5, "Elite": 20 } },
+                "Diamond": { "value": 3000, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 5 } },
+                "Mythic": { "value": 4500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 2 } },
+                "Void": { "value": 6000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 1 } },
+                "Crystallized": { "value": 7500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.2 } },
+                "Ancient Fossil": { "value": 15000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.002 } }
+            }
+        },
+        {
+            "name": "Viperfish",
+            "rarities": {
+                "Bronze": { "value": 60, "catch_rate": { "Basic": 300, "Advanced": 40, "Elite": 0 } },
+                "Silver": { "value": 180, "catch_rate": { "Basic": 40, "Advanced": 80, "Elite": 40 } },
+                "Gold": { "value": 600, "catch_rate": { "Basic": 4, "Advanced": 30, "Elite": 80 } },
+                "Platinum": { "value": 1800, "catch_rate": { "Basic": 0.5, "Advanced": 4, "Elite": 15 } },
+                "Diamond": { "value": 3600, "catch_rate": { "Basic": 0, "Advanced": 0.5, "Elite": 4 } },
+                "Mythic": { "value": 5400, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 1 } },
+                "Void": { "value": 7200, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.5 } },
+                "Crystallized": { "value": 9000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.1 } },
+                "Ancient Fossil": { "value": 18000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.004 } }
+            }
+        },
+        {
+            "name": "Hatchetfish",
+            "rarities": {
+                "Bronze": { "value": 40, "catch_rate": { "Basic": 500, "Advanced": 80, "Elite": 0 } },
+                "Silver": { "value": 120, "catch_rate": { "Basic": 60, "Advanced": 150, "Elite": 50 } },
+                "Gold": { "value": 400, "catch_rate": { "Basic": 6, "Advanced": 50, "Elite": 150 } },
+                "Platinum": { "value": 1200, "catch_rate": { "Basic": 1, "Advanced": 8, "Elite": 30 } },
+                "Diamond": { "value": 2400, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 8 } },
+                "Mythic": { "value": 3600, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 3 } },
+                "Void": { "value": 4800, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 1 } },
+                "Crystallized": { "value": 6000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.5 } },
+                "Ancient Fossil": { "value": 12000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.005 } }
+            }
+        },
+        {
+            "name": "Lanternfish",
+            "rarities": {
+                "Bronze": { "value": 30, "catch_rate": { "Basic": 700, "Advanced": 150, "Elite": 0 } },
+                "Silver": { "value": 90, "catch_rate": { "Basic": 80, "Advanced": 250, "Elite": 50 } },
+                "Gold": { "value": 300, "catch_rate": { "Basic": 8, "Advanced": 70, "Elite": 250 } },
+                "Platinum": { "value": 900, "catch_rate": { "Basic": 1, "Advanced": 15, "Elite": 50 } },
+                "Diamond": { "value": 1800, "catch_rate": { "Basic": 0, "Advanced": 1, "Elite": 15 } },
+                "Mythic": { "value": 2700, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 5 } },
+                "Void": { "value": 3600, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 3 } },
+                "Crystallized": { "value": 4500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 1 } },
+                "Ancient Fossil": { "value": 9000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.02 } }
+            }
+        },
+        {
+            "name": "Gulper Eel",
+            "rarities": {
+                "Bronze": { "value": 80, "catch_rate": { "Basic": 200, "Advanced": 20, "Elite": 0 } },
+                "Silver": { "value": 240, "catch_rate": { "Basic": 20, "Advanced": 40, "Elite": 20 } },
+                "Gold": { "value": 800, "catch_rate": { "Basic": 2, "Advanced": 10, "Elite": 40 } },
+                "Platinum": { "value": 2400, "catch_rate": { "Basic": 0.2, "Advanced": 2, "Elite": 8 } },
+                "Diamond": { "value": 4800, "catch_rate": { "Basic": 0, "Advanced": 0.2, "Elite": 2 } },
+                "Mythic": { "value": 7200, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.6 } },
+                "Void": { "value": 9600, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.3 } },
+                "Crystallized": { "value": 12000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.06 } },
+                "Ancient Fossil": { "value": 24000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.002 } }
+            }
+        },
+        {
+            "name": "Frilled Shark",
+            "rarities": {
+                "Bronze": { "value": 150, "catch_rate": { "Basic": 50, "Advanced": 5, "Elite": 0 } },
+                "Silver": { "value": 450, "catch_rate": { "Basic": 5, "Advanced": 10, "Elite": 20 } },
+                "Gold": { "value": 1500, "catch_rate": { "Basic": 1, "Advanced": 2, "Elite": 10 } },
+                "Platinum": { "value": 4500, "catch_rate": { "Basic": 0.05, "Advanced": 1, "Elite": 2 } },
+                "Diamond": { "value": 9000, "catch_rate": { "Basic": 0, "Advanced": 0.05, "Elite": 1 } },
+                "Mythic": { "value": 13500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.2 } },
+                "Void": { "value": 18000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.1 } },
+                "Crystallized": { "value": 22500, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.02 } },
+                "Ancient Fossil": { "value": 45000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.005 } }
+            }
+        },
+        {
+            "name": "Vampire Squid",
+            "rarities": {
+                "Bronze": { "value": 120, "catch_rate": { "Basic": 80, "Advanced": 8, "Elite": 0 } },
+                "Silver": { "value": 360, "catch_rate": { "Basic": 8, "Advanced": 15, "Elite": 8 } },
+                "Gold": { "value": 1200, "catch_rate": { "Basic": 0.8, "Advanced": 4, "Elite": 15 } },
+                "Platinum": { "value": 3600, "catch_rate": { "Basic": 0.08, "Advanced": 0.8, "Elite": 4 } },
+                "Diamond": { "value": 7200, "catch_rate": { "Basic": 0, "Advanced": 0.08, "Elite": 0.8 } },
+                "Mythic": { "value": 10800, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.4 } },
+                "Void": { "value": 14400, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.08 } },
+                "Crystallized": { "value": 18000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.04 } },
+                "Ancient Fossil": { "value": 36000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.0008 } }
+            }
+        },
+        {
+            "name": "Barreleye",
+            "rarities": {
+                "Bronze": { "value": 200, "catch_rate": { "Basic": 20, "Advanced": 2, "Elite": 0 } },
+                "Silver": { "value": 600, "catch_rate": { "Basic": 2, "Advanced": 5, "Elite": 10 } },
+                "Gold": { "value": 2000, "catch_rate": { "Basic": 1, "Advanced": 1, "Elite": 5 } },
+                "Platinum": { "value": 6000, "catch_rate": { "Basic": 0.02, "Advanced": 0.5, "Elite": 1 } },
+                "Diamond": { "value": 12000, "catch_rate": { "Basic": 0, "Advanced": 0.02, "Elite": 0.5 } },
+                "Mythic": { "value": 18000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.1 } },
+                "Void": { "value": 24000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.05 } },
+                "Crystallized": { "value": 30000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.01 } },
+                "Ancient Fossil": { "value": 60000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.002 } }
+            }
+        },
+        {
+            "name": "Goblin Shark",
+            "rarities": {
+                "Bronze": { "value": 300, "catch_rate": { "Basic": 5, "Advanced": 1, "Elite": 0 } },
+                "Silver": { "value": 900, "catch_rate": { "Basic": 1, "Advanced": 1, "Elite": 2 } },
+                "Gold": { "value": 3000, "catch_rate": { "Basic": 0.1, "Advanced": 0.5, "Elite": 1 } },
+                "Platinum": { "value": 9000, "catch_rate": { "Basic": 0.005, "Advanced": 0.1, "Elite": 0.5 } },
+                "Diamond": { "value": 18000, "catch_rate": { "Basic": 0, "Advanced": 0.005, "Elite": 0.1 } },
+                "Mythic": { "value": 27000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.05 } },
+                "Void": { "value": 36000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.01 } },
+                "Crystallized": { "value": 45000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.009 } },
+                "Ancient Fossil": { "value": 90000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.004 } }
+            }
+        },
+        {
+            "name": "Giant Squid",
+            "rarities": {
+                "Bronze": { "value": 500, "catch_rate": { "Basic": 1, "Advanced": 0.1, "Elite": 0 } },
+                "Silver": { "value": 1500, "catch_rate": { "Basic": 0.1, "Advanced": 0.2, "Elite": 1 } },
+                "Gold": { "value": 5000, "catch_rate": { "Basic": 0.01, "Advanced": 0.1, "Elite": 0.5 } },
+                "Platinum": { "value": 15000, "catch_rate": { "Basic": 0.001, "Advanced": 0.01, "Elite": 0.1 } },
+                "Diamond": { "value": 30000, "catch_rate": { "Basic": 0, "Advanced": 0.001, "Elite": 0.05 } },
+                "Mythic": { "value": 45000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.01 } },
+                "Void": { "value": 60000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.005 } },
+                "Crystallized": { "value": 75000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.001 } },
+                "Ancient Fossil": { "value": 150000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.0005 } }
+            }
+        },
+        {
+            "name": "Oarfish",
+            "rarities": {
+                "Bronze": { "value": 400, "catch_rate": { "Basic": 2, "Advanced": 0.5, "Elite": 0 } },
+                "Silver": { "value": 1200, "catch_rate": { "Basic": 0.5, "Advanced": 1, "Elite": 1 } },
+                "Gold": { "value": 4000, "catch_rate": { "Basic": 0.05, "Advanced": 0.2, "Elite": 0.8 } },
+                "Platinum": { "value": 12000, "catch_rate": { "Basic": 0.002, "Advanced": 0.05, "Elite": 0.2 } },
+                "Diamond": { "value": 24000, "catch_rate": { "Basic": 0, "Advanced": 0.002, "Elite": 0.08 } },
+                "Mythic": { "value": 36000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.02 } },
+                "Void": { "value": 48000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.008 } },
+                "Crystallized": { "value": 60000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.002 } },
+                "Ancient Fossil": { "value": 120000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.0008 } }
+            }
+        },
+        {
+            "name": "Coelacanth",
+            "rarities": {
+                "Bronze": { "value": 1000, "catch_rate": { "Basic": 0.1, "Advanced": 0.01, "Elite": 0 } },
+                "Silver": { "value": 3000, "catch_rate": { "Basic": 0.01, "Advanced": 0.02, "Elite": 0.1 } },
+                "Gold": { "value": 10000, "catch_rate": { "Basic": 0.001, "Advanced": 0.01, "Elite": 0.05 } },
+                "Platinum": { "value": 30000, "catch_rate": { "Basic": 0.0001, "Advanced": 0.001, "Elite": 0.01 } },
+                "Diamond": { "value": 60000, "catch_rate": { "Basic": 0, "Advanced": 0.0001, "Elite": 0.005 } },
+                "Mythic": { "value": 90000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.001 } },
+                "Void": { "value": 120000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.0005 } },
+                "Crystallized": { "value": 150000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.0001 } },
+                "Ancient Fossil": { "value": 300000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.00005 } }
+            }
+        },
+        {
+            "name": "Megalodon",
+            "rarities": {
+                "Bronze": { "value": 2000, "catch_rate": { "Basic": 0.05, "Advanced": 0.01, "Elite": 0 } },
+                "Silver": { "value": 6000, "catch_rate": { "Basic": 0.01, "Advanced": 0.05, "Elite": 0.1 } },
+                "Gold": { "value": 20000, "catch_rate": { "Basic": 0.001, "Advanced": 0.01, "Elite": 0.05 } },
+                "Platinum": { "value": 60000, "catch_rate": { "Basic": 0.0001, "Advanced": 0.001, "Elite": 0.01 } },
+                "Diamond": { "value": 120000, "catch_rate": { "Basic": 0, "Advanced": 0.0001, "Elite": 0.005 } },
+                "Mythic": { "value": 180000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.001 } },
+                "Void": { "value": 240000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.0005 } },
+                "Crystallized": { "value": 300000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.0001 } },
+                "Ancient Fossil": { "value": 600000, "catch_rate": { "Basic": 0, "Advanced": 0, "Elite": 0.00005 } }
+            }
+        }
+    ]
 }
-

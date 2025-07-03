@@ -76,7 +76,7 @@ fishing_rod = data.get("fishing_rod", "Basic")
 
 last_fish_time = 0
 
-# Main game loop with command option
+# Main game loop with command options
 while True:
     user_input = input(helpers.color_text("What would you like to do? (type 'help' for options): ", "yellow")).strip().lower()
     if user_input == "help":
@@ -231,6 +231,7 @@ while True:
                 # Update gallery in save file after catching a fish
                 fish_name = chosen_fish[0]
                 fish_rarity = chosen_fish[1]
+                fish_value = chosen_fish[2]["value"]
 
                 with open(save_file, "r") as file:
                     data = json.load(file)
@@ -243,8 +244,28 @@ while True:
 
                 data["gallery"][fish_name][fish_rarity] = True
 
+                # Update stats after catching a fish
+                if "stats" not in data:
+                    data["stats"] = {
+                        "total_fish_caught": 0,
+                        "most_valuable_fish": {
+                            "name": None,
+                            "value": 0
+                        }
+                    }
+
+                # Increment total fish caught
+                data["stats"]["total_fish_caught"] += 1
+
+                # Check if this is the most valuable fish
+                current_most_valuable = data["stats"]["most_valuable_fish"]["value"]
+                if fish_value > current_most_valuable:
+                    data["stats"]["most_valuable_fish"]["name"] = f"{fish_name} ({fish_rarity})"
+                    data["stats"]["most_valuable_fish"]["value"] = fish_value
+
                 with open(save_file, "w") as file:
                     json.dump(data, file, indent=4)
+
                 with open(save_file, "r") as file:
                     data = json.load(file)
                 current_xp = data.get("xp", 0)
