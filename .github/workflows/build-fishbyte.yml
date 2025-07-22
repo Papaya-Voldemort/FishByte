@@ -33,8 +33,17 @@ jobs:
       - name: 🛠️ Build EXE with PyInstaller
         run: pyinstaller --onefile --name FishByte --add-data "fish;fish" --add-data "save.json;." --add-data "save_json.json;." main.py
 
-      - name: 📁 Upload EXE Artifact
+      - name: 📦 Prepare ZIP artifact
+        run: |
+          mkdir artifact
+          cp dist/FishByte.exe artifact/
+          cp save.json artifact/
+          cd artifact
+          powershell Compress-Archive -Path FishByte.exe,save.json -DestinationPath ../FishByte-EXE.zip
+        shell: bash
+
+      - name: 📁 Upload ZIP Artifact
         uses: actions/upload-artifact@v4
         with:
           name: FishByte-EXE
-          path: dist/FishByte.exe
+          path: FishByte-EXE.zip
