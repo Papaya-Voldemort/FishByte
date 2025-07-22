@@ -1,4 +1,4 @@
-name: Build Python EXE
+name: Build Demo EXE 
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v4
       
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11'  # Adjust version as needed
         
@@ -31,7 +31,7 @@ jobs:
         pyinstaller --onefile --name demo demo.py
         
     - name: Upload executable as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: demo-executable
         path: dist/demo.exe
