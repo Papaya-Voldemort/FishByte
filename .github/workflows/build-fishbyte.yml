@@ -25,6 +25,11 @@ jobs:
           pip install pyinstaller
           pip install -r requirements.txt
 
+      - name: 🪄 Create dummy save files
+        run: |
+          echo {} > save.json
+          echo {} > save_json.json
+
       - name: 🛠️ Build EXE with PyInstaller
         run: pyinstaller --onefile --name FishByte --add-data "fish;fish" --add-data "save.json;." --add-data "save_json.json;." main.py
 
